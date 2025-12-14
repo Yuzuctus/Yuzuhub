@@ -1,0 +1,8 @@
+{
+  "name": "yuzuhub",
+  "version": "1.0.0",
+  "description": "YuzuHub - Liens et projets de Yuzuctus",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'"
+  }
+}

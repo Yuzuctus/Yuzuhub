@@ -76,8 +76,8 @@ img {
   top: var(--space-lg);
   right: var(--space-lg);
   z-index: 100;
-  width: 48px;
-  height: 48px;
+  width: var(--toggle-size);
+  height: var(--toggle-size);
   border-radius: var(--radius-full);
   border: 2px solid transparent;
   background: var(--color-surface);
@@ -107,7 +107,7 @@ img {
 }
 
 [data-theme="dark"] .theme-toggle:hover {
-  box-shadow: 0 0 15px rgba(52, 211, 153, 0.3);
+  box-shadow: 0 0 15px var(--accent-glow-strong);
 }
 
 .theme-toggle:active {
@@ -165,8 +165,8 @@ img {
 }
 
 .avatar {
-  width: 140px;
-  height: 140px;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
   border-radius: var(--radius-full);
   border: 3px solid transparent;
   background: var(--color-surface);
@@ -190,7 +190,7 @@ img {
 }
 
 [data-theme="dark"] .avatar:hover {
-  box-shadow: 0 0 30px rgba(52, 211, 153, 0.2);
+  box-shadow: 0 0 30px var(--accent-glow);
 }
 
 [data-theme="light"] .avatar:hover {
@@ -386,7 +386,7 @@ img {
       "youtube"
       "tiktok";
   }
-  
+
   .link-card.bento-full,
   .link-card.bento-tall {
     grid-column: span 1;
@@ -437,7 +437,7 @@ img {
 }
 
 [data-theme="dark"] .link-card:hover {
-  box-shadow: 0 0 20px rgba(52, 211, 153, 0.2);
+  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .link-card:active {
@@ -589,7 +589,7 @@ img {
 }
 
 [data-theme="dark"] .project-card:hover {
-  box-shadow: 0 0 20px rgba(52, 211, 153, 0.2);
+  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .project-card-header {
@@ -749,8 +749,8 @@ img {
   }
 
   .avatar {
-    width: 120px;
-    height: 120px;
+    width: var(--avatar-size-mobile);
+    height: var(--avatar-size-mobile);
   }
 
   .hero-title {
@@ -777,19 +777,13 @@ img {
   .theme-toggle {
     top: var(--space-md);
     right: var(--space-md);
-    width: 44px;
-    height: 44px;
+    width: var(--toggle-size-mobile);
+    height: var(--toggle-size-mobile);
   }
 }
 
 @media (min-width: 900px) {
   .bento-grid:not(.bento-grid--social) {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  /* Projets: centre automatiquement quand il manque des cartes */
-  .bento-grid.projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
-    justify-content: center;
   }
 }

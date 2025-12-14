@@ -28,6 +28,16 @@
   --transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.35s ease;
 
+  /* Component Sizes */
+  --avatar-size: 140px;
+  --avatar-size-mobile: 120px;
+  --toggle-size: 48px;
+  --toggle-size-mobile: 44px;
+
+  /* Accent Glow (reusable) */
+  --accent-glow: rgba(52, 211, 153, 0.2);
+  --accent-glow-strong: rgba(52, 211, 153, 0.3);
+
   /* Brand Colors (Social) */
   --brand-x: #000000;
   --brand-github: #333333;
