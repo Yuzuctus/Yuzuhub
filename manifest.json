@@ -1,0 +1,16 @@
+ire s{
+  "name": "YuzuHub",
+  "short_name": "YuzuHub",
+  "description": "Liens et projets de Yuzuctus",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0f0c",
+  "theme_color": "#52b788",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍋</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
