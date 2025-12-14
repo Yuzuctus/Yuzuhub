@@ -318,10 +318,17 @@ img {
   grid-area: tiktok;
 }
 
-/* Projets: grille centrée si colonnes manquantes */
+/* Projets: grille centrée */
 .bento-grid.projects-grid {
-  grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: var(--space-md);
+}
+
+.bento-grid.projects-grid .project-card {
+  flex: 0 1 280px;
+  max-width: 320px;
 }
 
 /* Hiérarchie visuelle: Discord + TikTok moins mis en avant */
