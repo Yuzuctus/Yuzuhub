@@ -56,9 +56,9 @@ img {
    ============================================ */
 .container {
   width: 100%;
-  max-width: 900px;
+  max-width: 1360px;
   margin: 0 auto;
-  padding: var(--space-xl) var(--space-lg);
+  padding: var(--space-xl) clamp(var(--space-md), 2.5vw, var(--space-xl));
 }
 
 .main {
@@ -224,7 +224,7 @@ img {
 .hero-text {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: var(--space-sm);
 }
 
 .hero-title {
@@ -240,9 +240,91 @@ img {
 }
 
 .hero-tagline {
-  font-size: 1.1rem;
+  max-width: 44rem;
+  font-size: clamp(1.3rem, 2.1vw, 1.85rem);
+  line-height: 1.35;
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.hero-description {
+  max-width: 42rem;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
   color: var(--color-text-muted);
-  font-weight: 500;
+}
+
+.project-card.featured-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 420px);
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.featured-project-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding-top: var(--space-xs);
+}
+
+.featured-project-meta {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.featured-project .project-card-description {
+  max-width: 34rem;
+  font-size: 1rem;
+}
+
+.featured-project-links {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.featured-project-visual {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  justify-self: end;
+  overflow: hidden;
+  border-radius: calc(var(--radius-lg) - 2px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #09110d;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  aspect-ratio: 16 / 10;
+  max-height: 270px;
+}
+
+.featured-project-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.06) 100%
+  );
+  pointer-events: none;
+}
+
+.featured-project-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.featured-project-visual:hover img {
+  transform: scale(1.02);
 }
 
 /* ============================================
@@ -282,12 +364,12 @@ img {
 /* Réseaux: Bento layout explicite (évite les décalages et le passage en 3 colonnes) */
 .bento-grid.bento-grid--social {
   grid-auto-flow: row;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, minmax(92px, auto));
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(96px, auto));
   grid-template-areas:
-    "x x github github"
-    "youtube youtube twitch twitch"
-    "reddit reddit discord tiktok";
+    "x x x x github github github github github github github github"
+    "youtube youtube youtube youtube reddit reddit reddit reddit twitch twitch twitch twitch"
+    "discord discord discord discord discord discord tiktok tiktok tiktok tiktok tiktok tiktok";
 }
 
 .bento-grid--social [data-brand="x"] {
@@ -320,50 +402,30 @@ img {
 
 /* Projets: grille centrée */
 .bento-grid.projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--space-md);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-lg);
+  align-items: stretch;
 }
 
-.bento-grid.projects-grid .project-card {
-  flex: 0 1 280px;
-  max-width: 320px;
+.bento-grid--social .link-card {
+  min-height: 104px;
 }
 
-/* Hiérarchie visuelle: Discord + TikTok moins mis en avant */
-.bento-grid--social [data-brand="discord"],
-.bento-grid--social [data-brand="tiktok"] {
-  padding: var(--space-md);
-}
-
-.bento-grid--social [data-brand="discord"] .link-card-icon,
-.bento-grid--social [data-brand="tiktok"] .link-card-icon {
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
-}
-
-.bento-grid--social [data-brand="discord"] .link-card-icon svg,
-.bento-grid--social [data-brand="tiktok"] .link-card-icon svg {
-  width: 22px;
-  height: 22px;
-}
-
-.bento-grid--social [data-brand="discord"] .link-card-title,
-.bento-grid--social [data-brand="tiktok"] .link-card-title {
-  font-size: 1.02rem;
+.bento-grid--social .link-card-subtitle {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 900px) {
   .bento-grid.bento-grid--social {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, minmax(92px, auto));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(92px, auto));
     grid-template-areas:
-      "x github"
-      "youtube twitch"
-      "reddit reddit"
-      "discord tiktok";
+      "x x x github github github"
+      "youtube youtube reddit reddit twitch twitch"
+      "discord discord discord tiktok tiktok tiktok";
   }
 }
 
@@ -378,7 +440,7 @@ img {
 
 /* Responsive - 1 colonne sur mobile */
 @media (max-width: 500px) {
-  .bento-grid:not(.bento-grid--social) {
+  .bento-grid:not(.bento-grid--social):not(.projects-grid) {
     grid-template-columns: 1fr;
   }
 
@@ -398,6 +460,11 @@ img {
   .link-card.bento-tall {
     grid-column: span 1;
     grid-row: span 1;
+  }
+
+  .bento-grid.projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
   }
 }
 
@@ -474,6 +541,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  flex: 1 1 auto;
   min-width: 0;
 }
 
@@ -640,6 +708,11 @@ img {
   padding-top: var(--space-sm);
 }
 
+.project-card-links--single .project-link {
+  flex: 1;
+  justify-content: center;
+}
+
 .project-link {
   display: inline-flex;
   align-items: center;
@@ -765,10 +838,28 @@ img {
   }
 
   .hero-tagline {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
-  .bento-grid:not(.bento-grid--social) {
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .project-card.featured-project {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .featured-project-visual {
+    max-width: none;
+    justify-self: stretch;
+  }
+
+  .featured-project-links {
+    justify-content: flex-start;
+  }
+
+  .bento-grid:not(.bento-grid--social):not(.projects-grid) {
     grid-template-columns: 1fr;
     gap: var(--space-md);
   }
@@ -789,8 +880,14 @@ img {
   }
 }
 
+@media (max-width: 900px) {
+  .bento-grid.projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 900px) {
-  .bento-grid:not(.bento-grid--social) {
+  .bento-grid:not(.bento-grid--social):not(.projects-grid) {
     grid-template-columns: repeat(3, 1fr);
   }
 }

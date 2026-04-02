@@ -5,40 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Les liens des réseaux, comptes et projets de Yuzuctus"
+      content="Site officiel de Yuzuctus sur yuzuctus.fr : projets, profils, réseaux et liens utiles."
     />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="theme-color" content="#050b08" />
+    <link rel="canonical" href="https://yuzuctus.fr/" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="YuzuHub - Yuzuctus" />
+    <meta
+      property="og:title"
+      content="Yuzuctus | yuzuctus.fr - projets, réseaux et liens officiels"
+    />
     <meta
       property="og:description"
-      content="Les liens des réseaux, comptes et projets de Yuzuctus"
+      content="Site officiel de Yuzuctus sur yuzuctus.fr : projets, profils, réseaux et liens utiles."
     />
+    <meta property="og:site_name" content="Yuzuctus" />
+    <meta property="og:locale" content="fr_FR" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yuzuhub.pages.dev" />
+    <meta property="og:url" content="https://yuzuctus.fr/" />
     <meta
       property="og:image"
-      content="https://yuzuhub.pages.dev/img/avatar.avif"
+      content="https://yuzuctus.fr/img/avatar.avif"
     />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="YuzuHub - Yuzuctus" />
     <meta
-      name="twitter:description"
-      content="Les liens des réseaux, comptes et projets de Yuzuctus"
+      name="twitter:title"
+      content="Yuzuctus | yuzuctus.fr - projets, réseaux et liens officiels"
     />
     <meta
+      name="twitter:description"
+      content="Site officiel de Yuzuctus sur yuzuctus.fr : projets, profils, réseaux et liens utiles."
+    />
+    <meta name="twitter:site" content="@Yuzuctus" />
+    <meta name="twitter:creator" content="@Yuzuctus" />
+    <meta
       name="twitter:image"
-      content="https://yuzuhub.pages.dev/img/avatar.avif"
+      content="https://yuzuctus.fr/img/avatar.avif"
     />
 
     <!-- Favicon (AVIF) -->
     <link rel="icon" type="image/avif" href="img/avatar.avif" />
     <link rel="apple-touch-icon" href="img/avatar.avif" />
 
-    <title>YuzuHub - Yuzuctus</title>
+    <title>Yuzuctus | yuzuctus.fr - projets, réseaux et liens officiels</title>
 
     <!-- Preconnect for fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,6 +58,37 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://yuzuctus.fr/#website",
+            "url": "https://yuzuctus.fr/",
+            "name": "Yuzuctus",
+            "inLanguage": "fr-FR"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://yuzuctus.fr/#person",
+            "name": "Yuzuctus",
+            "url": "https://yuzuctus.fr/",
+            "image": "https://yuzuctus.fr/img/avatar.avif",
+            "sameAs": [
+              "https://github.com/Yuzuctus",
+              "https://x.com/Yuzuctus",
+              "https://www.reddit.com/user/Turnip-Unique/",
+              "https://www.twitch.tv/yuzuctus",
+              "https://www.youtube.com/@Yuzuctus",
+              "https://www.tiktok.com/@yuzuctus",
+              "https://osu.ppy.sh/users/14062291",
+              "https://steamcommunity.com/id/Yuzuctus/"
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- SVG Symbol Definitions (hidden) -->
@@ -147,9 +190,66 @@
           </div>
           <div class="hero-text">
             <h1 class="hero-title">Yuzu<span>ctus</span></h1>
-            <p class="hero-tagline">Joueur osu! et étudiant en informatique</p>
+            <p class="hero-tagline">
+              Je construis des outils et des sites autour de mes idées, de mes
+              usages et de mon univers.
+            </p>
+            <p class="hero-description">
+              Retrouve ici mes projets, mes profils et les outils que je
+              développe sur yuzuctus.fr.
+            </p>
           </div>
         </header>
+
+        <!-- Featured Project Section -->
+        <section class="section featured-project-section">
+          <h2 class="section-title">Projet phare</h2>
+          <article class="project-card featured-project">
+            <div class="featured-project-content">
+              <p class="featured-project-meta">Osurea.yuzuctus.fr</p>
+              <div class="project-card-header">
+                <div class="project-card-icon">O</div>
+                <h3 class="project-card-title">Osurea</h3>
+              </div>
+              <p class="project-card-description">
+                Mon premier vrai projet marquant, pensé pour aider à visualiser
+                et commenter son area de tablette.
+              </p>
+              <div class="project-card-links featured-project-links">
+                <a
+                  href="https://osurea.yuzuctus.fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link project-link-primary"
+                >
+                  <svg><use href="#icon-external"></use></svg>
+                  Voir le site
+                </a>
+                <a
+                  href="https://github.com/Yuzuctus/Osurea"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link project-link-secondary"
+                >
+                  <svg><use href="#icon-github"></use></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <a
+              href="https://osurea.yuzuctus.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="featured-project-visual"
+              aria-label="Voir l'aperçu d'Osurea"
+            >
+              <img
+                src="img/osurea-preview.png"
+                alt="Aperçu de l'interface d'Osurea"
+              />
+            </a>
+          </article>
+        </section>
 
         <!-- Social Links Section -->
         <section class="section">
@@ -407,36 +507,49 @@
 
         <!-- Projects Section -->
         <section class="section">
-          <h2 class="section-title">Projets</h2>
+          <h2 class="section-title">Autres projets</h2>
           <div class="bento-grid projects-grid">
-            <!-- Osurea -->
+            <!-- Nectar Render -->
             <article class="project-card">
               <div class="project-card-header">
-                <div class="project-card-icon">O</div>
-                <h3 class="project-card-title">Osurea</h3>
+                <div class="project-card-icon">N</div>
+                <h3 class="project-card-title">Nectar Render</h3>
               </div>
               <p class="project-card-description">
-                Visualise et commente ton Area de tablette. Parfait pour trouver
-                ce qui te convient.
+                Convertisseur Markdown vers PDF et HTML avec aperçu en direct,
+                thèmes intégrés et options de mise en forme.
               </p>
-              <div class="project-card-links">
+              <div class="project-card-links project-card-links--single">
                 <a
-                  href="https://osurea.yuzuctus.fr"
+                  href="https://github.com/Yuzuctus/Nectar-Render"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link project-link-primary"
+                >
+                  <svg><use href="#icon-github"></use></svg>
+                  Voir sur GitHub
+                </a>
+              </div>
+            </article>
+
+            <!-- YuZest -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <div class="project-card-icon">Z</div>
+                <h3 class="project-card-title">YuZest</h3>
+              </div>
+              <p class="project-card-description">
+                Raccourcisseur de liens privé accessible via zest.yuzuctus.fr.
+              </p>
+              <div class="project-card-links project-card-links--single">
+                <a
+                  href="https://zest.yuzuctus.fr/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="project-link project-link-primary"
                 >
                   <svg><use href="#icon-external"></use></svg>
-                  Visiter
-                </a>
-                <a
-                  href="https://github.com/Yuzuctus/Osurea"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project-link project-link-secondary"
-                >
-                  <svg><use href="#icon-github"></use></svg>
-                  GitHub
+                  Accéder
                 </a>
               </div>
             </article>
