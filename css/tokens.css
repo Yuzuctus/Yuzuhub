@@ -1,0 +1,105 @@
+/*
+  Yuzuctus - Desert Vivant Design Tokens
+  Palette from the OC. No calculated blends. High contrast.
+*/
+
+:root {
+  /* Palette */
+  --sand: #FCEFE0;
+  --mint: #A6E9D1;
+  --cyan: #82CDC2;
+  --deep: #5EAAA9;
+  --lemon: #FDF1B6;
+  --lime: #CEF3A0;
+  --blush: #F5A8A3;
+  --candy: #FA8DB3;
+  --ink: #2F3C3B;
+  --ink-soft: #4A5756;
+  --white: #FFFFFF;
+
+  /* Day (default) */
+  --bg: var(--sand);
+  --bg-start: #FFF8F0;
+  --bg-end: var(--sand);
+  --fg: var(--ink);
+  --fg-muted: var(--ink-soft);
+  --fg-quiet: #6E7E7D;
+  --accent: var(--mint);
+  --accent-strong: var(--deep);
+  --link: var(--deep);
+  --link-hover: var(--cyan);
+  --surface: var(--white);
+  --surface-tinted: #FBF6EF;
+  --border: #C4B8A4;
+  --border-soft: #DDD0BF;
+  --shadow-color: rgba(47, 60, 59, 0.1);
+  --shadow-stamp-color: rgba(47, 60, 59, 0.2);
+  --cta: var(--candy);
+  --cta-hover: #E87A9F;
+  --warm: var(--lemon);
+  --warm-border: #D4C97A;
+  --danger: #D45B5B;
+  --scrollbar-track: #F2EDE4;
+  --scrollbar-thumb: #B5AEA4;
+  --scrollbar-thumb-hover: #9F978C;
+  --scrollbar-thumb-active: #8A8278;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-section: clamp(4rem, 10vw, 8rem);
+
+  /* Typography */
+  --font-display: 'Nunito', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --text-hero: clamp(2.5rem, 8vw, 6rem);
+  --text-2xl: clamp(2rem, 4vw, 2.5rem);
+  --text-xl: clamp(1.5rem, 3vw, 1.75rem);
+  --text-lg: 1.25rem;
+  --text-md: 1rem;
+  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+  --leading-tight: 1.1;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+  /* Border radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-xl: 2rem;
+  --radius-full: 9999px;
+  --radius-egg: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  --radius-pebble: 2rem 0.8rem 1.8rem 1rem;
+  --radius-bloom: 1.2rem 2rem 1.6rem 0.8rem;
+
+  /* Shadows */
+  --shadow-soft: 0 2px 8px var(--shadow-color);
+  --shadow-md: 0 4px 16px var(--shadow-color);
+  --shadow-stamp: 3px 3px 0 var(--shadow-stamp-color);
+  --shadow-stamp-hover: 2px 2px 0 var(--shadow-stamp-color);
+  --shadow-glow: 0 0 20px rgba(166, 233, 209, 0.25);
+
+  /* Motion */
+  --ease-swish: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-bloom: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur-normal: 300ms;
+  --dur-slow: 500ms;
+
+  /* Layout */
+  --max-width: 72rem;
+  --max-width-narrow: 48rem;
+  --max-width-wide: 88rem;
+  --nav-height: 3.5rem;
+}

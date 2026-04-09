@@ -1,0 +1,143 @@
+/*
+  Yuzuctus - Desert Vivant Navigation
+  Discreet floating nav. Barely there until you need it.
+*/
+
+.desert-nav {
+  position: fixed;
+  top: var(--space-md);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-xs) var(--space-lg) var(--space-xs) var(--space-md);
+  background: var(--surface);
+  border: 2px solid var(--border-soft);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-soft);
+  transition: background var(--dur-normal) var(--ease-swish),
+              border-color var(--dur-normal) var(--ease-swish),
+              box-shadow var(--dur-normal) var(--ease-swish);
+}
+
+[data-theme="night"] .desert-nav {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+.desert-nav-brand {
+  text-decoration: none;
+  margin-right: var(--space-xs);
+  white-space: nowrap;
+  font-size: var(--text-md);
+}
+
+.desert-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.desert-nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35em 0.8em;
+  min-height: 2.75rem;
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--fg-muted);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease-swish),
+              background var(--dur-fast) var(--ease-swish);
+  white-space: nowrap;
+}
+
+.desert-nav-link:hover {
+  color: var(--fg);
+  background: rgba(166, 233, 209, 0.15);
+}
+
+.desert-nav-link[aria-current="page"] {
+  color: var(--accent-strong);
+  background: rgba(166, 233, 209, 0.2);
+  font-weight: var(--weight-semibold);
+}
+
+[data-theme="night"] .desert-nav-link:hover {
+  color: var(--fg);
+  background: rgba(125, 212, 184, 0.15);
+}
+
+[data-theme="night"] .desert-nav-link[aria-current="page"] {
+  color: var(--accent);
+  background: rgba(125, 212, 184, 0.2);
+}
+
+.desert-nav-toggle {
+  margin-left: var(--space-xs);
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: var(--text-sm);
+  border-width: 2px;
+  opacity: 0.6;
+  transition: opacity var(--dur-fast) var(--ease-swish),
+              transform var(--dur-fast) var(--ease-bloom);
+}
+
+.desert-nav-toggle:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.desert-nav.scrolled {
+  background: var(--surface-tinted);
+  box-shadow: var(--shadow-soft);
+  border-color: var(--border);
+}
+
+[data-theme="night"] .desert-nav.scrolled {
+  background: var(--surface-tinted);
+  border-color: var(--border);
+}
+
+@media (max-width: 720px) {
+  .desert-nav {
+    top: auto;
+    bottom: var(--space-sm);
+    left: var(--space-sm);
+    right: var(--space-sm);
+    transform: none;
+    justify-content: space-around;
+    width: auto;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-xl);
+  }
+
+  .desert-nav-brand { display: none; }
+
+  .desert-nav-links {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .desert-nav-link {
+    font-size: var(--text-xs);
+    padding: var(--space-xs);
+  }
+
+  .desert-nav-toggle {
+    position: fixed;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    z-index: 101;
+    margin: 0;
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: var(--text-sm);
+    opacity: 0.7;
+  }
+}

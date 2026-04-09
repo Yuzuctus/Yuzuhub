@@ -1,0 +1,221 @@
+/*
+  Yuzuhub composition layer
+  Keeps content-specific layout on top of the shared design system.
+*/
+
+:root {
+  --space-section: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.hero {
+  min-height: 102dvh;
+  padding: calc(var(--nav-height) + var(--space-lg)) var(--space-lg) var(--space-lg);
+  gap: var(--space-lg);
+}
+
+#projet.section {
+  padding-top: clamp(1.75rem, 4vw, 3rem);
+}
+
+@media (max-width: 820px) {
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--nav-height) + var(--space-xl));
+    padding-bottom: var(--space-lg);
+  }
+}
+
+.hero-content {
+  gap: var(--space-md);
+}
+
+.hero-title,
+.section-heading h2 {
+  text-wrap: balance;
+}
+
+.hero-subtitle,
+.hero .text-muted,
+.section-heading p,
+.feature-content p,
+.rock p {
+  text-wrap: pretty;
+}
+
+.hero-subtitle {
+  max-width: 31ch;
+}
+
+.hero .text-muted {
+  max-width: 34ch;
+}
+
+.hero-portrait img {
+  width: clamp(20rem, 40vw, 40rem);
+}
+
+@media (max-width: 820px) {
+  .hero-portrait img {
+    width: min(74vw, 21rem);
+  }
+}
+
+.section-heading {
+  margin-bottom: var(--space-lg);
+}
+
+.section-heading p {
+  max-width: 42rem;
+}
+
+.feature-shell {
+  padding: var(--space-md);
+  gap: var(--space-md);
+}
+
+.feature-content {
+  gap: var(--space-sm);
+}
+
+.links-grid {
+  gap: var(--space-sm);
+}
+
+.link-tile {
+  min-height: 4.5rem;
+  padding: 0.8rem 0.9rem;
+}
+
+.projects-grid {
+  gap: var(--space-md);
+  align-items: stretch;
+}
+
+.rock {
+  padding: var(--space-md);
+}
+
+.projects-grid > .rock {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+}
+
+.links-grid--social {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.links-grid--games {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1040px) {
+  .links-grid--social,
+  .links-grid--games {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .links-grid--social,
+  .links-grid--games {
+    grid-template-columns: 1fr;
+  }
+}
+
+.inline-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.link-tile-icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.project-actions {
+  margin-top: auto;
+  padding-top: var(--space-md);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.project-actions .btn {
+  min-height: 2.75rem;
+}
+
+.link-tile.is-copied {
+  border-color: var(--accent-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.link-tile[data-brand="x"]:hover .link-tile-icon {
+  background: #000000;
+  border-color: #000000;
+  color: #FFFFFF;
+}
+
+.link-tile[data-brand="github"]:hover .link-tile-icon {
+  background: #333333;
+  border-color: #333333;
+  color: #FFFFFF;
+}
+
+.link-tile[data-brand="reddit"]:hover .link-tile-icon {
+  background: #ff4500;
+  border-color: #ff4500;
+  color: #FFFFFF;
+}
+
+.link-tile[data-brand="discord"]:hover .link-tile-icon {
+  background: #5865f2;
+  border-color: #5865f2;
+  color: #FFFFFF;
+}
+
+.link-tile[data-brand="twitch"]:hover .link-tile-icon {
+  background: #9146ff;
+  border-color: #9146ff;
+  color: #FFFFFF;
+}
+
+.link-tile[data-brand="youtube"]:hover .link-tile-icon {
+  background: #ff0000;
+  border-color: #ff0000;
+  color: #FFFFFF;
+}
+
+.link-tile[data-brand="tiktok"]:hover .link-tile-icon {
+  background: #fe2c55;
+  border-color: #fe2c55;
+  color: #FFFFFF;
+}
+
+.link-tile[data-brand="osu"]:hover .link-tile-icon {
+  background: #ff66aa;
+  border-color: #ff66aa;
+  color: #FFFFFF;
+}
+
+.link-tile[data-brand="steam"]:hover .link-tile-icon {
+  background: #1b2838;
+  border-color: #1b2838;
+  color: #FFFFFF;
+}
+
+.link-tile[data-brand="riot"]:hover .link-tile-icon {
+  background: #d32936;
+  border-color: #d32936;
+  color: #FFFFFF;
+}
+
+.link-tile .icon-brand {
+  width: 1.12rem;
+  height: 1.12rem;
+}
