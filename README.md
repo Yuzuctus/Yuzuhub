@@ -4,7 +4,7 @@ Personal link hub for **Yuzuctus**.
 
 ## 🌐 Live
 
-[yuzuhub.pages.dev](https://yuzuhub.pages.dev)
+[yuzuctus,fr](https://yuzuctus.fr)
 
 ## 🔗 Links
 
