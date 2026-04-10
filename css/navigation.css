@@ -93,6 +93,83 @@
   transform: scale(1.1);
 }
 
+.desert-nav-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-left: var(--space-xs);
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.24rem;
+  padding: 0.18rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-full);
+  background: var(--surface-tinted);
+  box-shadow: var(--shadow-soft);
+}
+
+.lang-switch-btn {
+  min-width: 2.15rem;
+  min-height: 2.15rem;
+  padding: 0.2rem 0.55rem;
+  border: 2px solid transparent;
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  color: var(--fg-muted);
+  background: transparent;
+  transition: color var(--dur-fast) var(--ease-swish),
+              background var(--dur-fast) var(--ease-swish),
+              border-color var(--dur-fast) var(--ease-swish),
+              transform var(--dur-fast) var(--ease-bloom);
+}
+
+.lang-switch-btn:hover:not(:disabled) {
+  color: var(--fg);
+  background: rgba(166, 233, 209, 0.18);
+}
+
+.lang-switch-btn:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 2px;
+}
+
+.lang-switch-btn[aria-pressed="true"] {
+  color: var(--ink);
+  background: var(--accent-strong);
+  border-color: var(--fg);
+  box-shadow: var(--shadow-stamp-hover);
+  transform: translateY(-1px);
+}
+
+.lang-switch-btn[aria-pressed="false"] {
+  color: var(--fg-muted);
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  transform: none;
+}
+
+.lang-switch-btn:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+[data-theme="night"] .lang-switch {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+[data-theme="night"] .lang-switch-btn[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--fg);
+  color: var(--bg-start);
+}
+
 .desert-nav.scrolled {
   background: var(--surface-tinted);
   box-shadow: var(--shadow-soft);
@@ -121,23 +198,42 @@
 
   .desert-nav-links {
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 0;
   }
 
   .desert-nav-link {
     font-size: var(--text-xs);
-    padding: var(--space-xs);
+    padding: 0.24rem 0.3rem;
+    min-height: 2.2rem;
+    letter-spacing: -0.01em;
+  }
+
+  .desert-nav-controls {
+    position: fixed;
+    top: var(--space-sm);
+    left: var(--space-sm);
+    z-index: 101;
+    gap: 0.4rem;
+    margin: 0;
+  }
+
+  .lang-switch {
+    padding: 0.12rem;
+    background: var(--surface);
+  }
+
+  .lang-switch-btn {
+    min-width: 1.95rem;
+    min-height: 1.95rem;
+    padding: 0.18rem 0.45rem;
   }
 
   .desert-nav-toggle {
-    position: fixed;
-    top: var(--space-sm);
-    right: var(--space-sm);
-    z-index: 101;
-    margin: 0;
-    width: 2.75rem;
-    height: 2.75rem;
-    font-size: var(--text-sm);
+    margin-left: 0;
+    width: 2.45rem;
+    height: 2.45rem;
+    font-size: var(--text-xs);
     opacity: 0.7;
   }
 }

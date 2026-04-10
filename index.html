@@ -6,6 +6,7 @@
     <meta
       name="description"
       content="Official Yuzuctus hub on yuzuctus.fr: projects, socials, and practical tools built in my own style."
+      data-i18n-content="meta.description"
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="theme-color" content="#fff8f0" />
@@ -14,13 +15,15 @@
     <meta
       property="og:title"
       content="Yuzuctus | projects, socials, and tools"
+      data-i18n-content="meta.title"
     />
     <meta
       property="og:description"
       content="Official Yuzuctus hub on yuzuctus.fr: projects, socials, and practical tools built in my own style."
+      data-i18n-content="meta.description"
     />
     <meta property="og:site_name" content="Yuzuctus" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="en_US" data-i18n-content="meta.ogLocale" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://yuzuctus.fr/" />
     <meta property="og:image" content="https://yuzuctus.fr/img/avatar.avif" />
@@ -29,10 +32,12 @@
     <meta
       name="twitter:title"
       content="Yuzuctus | projects, socials, and tools"
+      data-i18n-content="meta.title"
     />
     <meta
       name="twitter:description"
       content="Official Yuzuctus hub on yuzuctus.fr: projects, socials, and practical tools built in my own style."
+      data-i18n-content="meta.description"
     />
     <meta name="twitter:site" content="@Yuzuctus" />
     <meta name="twitter:creator" content="@Yuzuctus" />
@@ -41,7 +46,7 @@
     <link rel="icon" type="image/avif" href="img/avatar.avif" />
     <link rel="apple-touch-icon" href="img/avatar.avif" />
 
-    <title>Yuzuctus | projects, socials, and tools</title>
+    <title data-i18n="meta.title">Yuzuctus | projects, socials, and tools</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -98,29 +103,42 @@
       class="desert-nav"
       role="navigation"
       aria-label="Main navigation"
+      data-i18n-aria-label="nav.mainAria"
     >
       <a href="#top" class="desert-nav-brand wordmark" aria-current="page">
         <span class="wordmark-first">Yuzuc</span
         ><span class="wordmark-rest">tus</span>
       </a>
       <div class="desert-nav-links">
-        <a href="#projet" class="desert-nav-link">Featured</a>
-        <a href="#reseaux" class="desert-nav-link">Socials</a>
-        <a href="#jeux" class="desert-nav-link">Gaming</a>
-        <a href="#projets" class="desert-nav-link">Projects</a>
+        <a href="#projet" class="desert-nav-link" data-i18n="nav.featured">Featured</a>
+        <a href="#reseaux" class="desert-nav-link" data-i18n="nav.socials">Socials</a>
+        <a href="#jeux" class="desert-nav-link" data-i18n="nav.gaming">Gaming</a>
+        <a href="#projets" class="desert-nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="#music" class="desert-nav-link" data-i18n="nav.music">Music</a>
       </div>
-      <button
-        class="theme-toggle desert-nav-toggle"
-        type="button"
-        aria-label="Switch to night mode"
-      >
-        <svg class="theme-toggle-icon icon-moon icon-stroke" aria-hidden="true">
-          <use href="img/icons.svg#icon-moon"></use>
-        </svg>
-        <svg class="theme-toggle-icon icon-sun icon-stroke" aria-hidden="true">
-          <use href="img/icons.svg#icon-sun"></use>
-        </svg>
-      </button>
+      <div class="desert-nav-controls">
+        <div
+          class="lang-switch"
+          role="group"
+          aria-label="Language selector"
+          data-i18n-aria-label="language.selectorAria"
+        >
+          <button type="button" class="lang-switch-btn" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-switch-btn" data-lang-option="fr" aria-pressed="false">FR</button>
+        </div>
+        <button
+          class="theme-toggle desert-nav-toggle"
+          type="button"
+          aria-label="Switch to night mode"
+        >
+          <svg class="theme-toggle-icon icon-moon icon-stroke" aria-hidden="true">
+            <use href="img/icons.svg#icon-moon"></use>
+          </svg>
+          <svg class="theme-toggle-icon icon-sun icon-stroke" aria-hidden="true">
+            <use href="img/icons.svg#icon-sun"></use>
+          </svg>
+        </button>
+      </div>
     </nav>
 
     <main>
@@ -128,17 +146,15 @@
         <div class="hero-content">
           <span class="kicker">Yuzuhub</span>
           <h1 class="hero-title">Yuzu<em>ctus</em></h1>
-          <p class="hero-subtitle">
-            I build practical web tools with personality:
-            sharp, playful, and clean.
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            I build practical web tools with personality: sharp, playful, and clean.
           </p>
-          <p class="text-muted">
-            This is my home base for projects, profiles,
-            and experiments shipped in public.
+          <p class="text-muted" data-i18n="hero.muted">
+            This is my home base for projects, profiles, and experiments shipped in public.
           </p>
           <div class="hero-actions">
-            <a href="#projet" class="btn btn--cactus">See featured project</a>
-            <a href="#reseaux" class="btn btn--pebble">Find me online</a>
+            <a href="#projet" class="btn btn--cactus" data-i18n="hero.ctaFeatured">See featured project</a>
+            <a href="#reseaux" class="btn btn--pebble" data-i18n="hero.ctaFindMe">Find me online</a>
           </div>
         </div>
         <div class="hero-portrait">
@@ -146,6 +162,7 @@
             class="animate-sway-sm"
             src="img/Yuzu_Joazoom-ver-nobg.png"
             alt="Official Yuzuctus avatar"
+            data-i18n-alt="hero.avatarAlt"
             width="512"
             height="512"
             loading="eager"
@@ -156,11 +173,10 @@
       <section class="section" id="projet">
         <div class="container">
           <div class="section-heading reveal">
-            <span class="kicker">Featured project</span>
+            <span class="kicker" data-i18n="featured.kicker">Featured project</span>
             <h2>Osurea.yuzuctus.fr</h2>
-            <p>
-              My flagship project for comparing tablet area setups,
-              visualizing differences, and sharing settings quickly.
+            <p data-i18n="featured.description">
+              My flagship project for comparing tablet area setups, visualizing differences, and sharing settings quickly.
             </p>
           </div>
 
@@ -168,9 +184,8 @@
             <div class="feature-content">
               <p class="feature-meta">Osurea.yuzuctus.fr</p>
               <h3>Osurea</h3>
-              <p>
-                A focused app to compare tablet area setups,
-                spot differences fast, and share exact values.
+              <p data-i18n="featured.body">
+                A focused app to compare tablet area setups, spot differences fast, and share exact values.
               </p>
               <div class="feature-actions">
                 <a
@@ -182,7 +197,7 @@
                   <svg class="inline-icon icon-stroke" aria-hidden="true">
                     <use href="img/icons.svg#icon-external-link"></use>
                   </svg>
-                  Open app
+                  <span data-i18n="featured.openApp">Open app</span>
                 </a>
                 <a
                   href="https://github.com/Yuzuctus/Osurea"
@@ -203,10 +218,12 @@
               rel="noopener noreferrer"
               class="feature-visual"
               aria-label="View Osurea preview"
+              data-i18n-aria-label="featured.previewAria"
             >
               <img
                 src="img/osurea-preview.png"
                 alt="Preview of the Osurea interface"
+                data-i18n-alt="featured.previewAlt"
                 width="1470"
                 height="882"
                 loading="lazy"
@@ -219,9 +236,9 @@
       <section class="section" id="reseaux">
         <div class="container">
           <div class="section-heading reveal">
-            <span class="kicker">Social</span>
-            <h2>Socials and channels</h2>
-            <p>Follow my updates, videos, and latest builds.</p>
+            <span class="kicker" data-i18n="social.kicker">Social</span>
+            <h2 data-i18n="social.title">Socials and channels</h2>
+            <p data-i18n="social.description">Follow my updates, videos, and latest builds.</p>
           </div>
 
           <div class="links-grid links-grid--social">
@@ -288,6 +305,7 @@
               data-brand="discord"
               data-copy="yuzuctus"
               aria-label="Copy Discord username"
+              data-i18n-aria-label="social.discordAria"
             >
               <span class="link-tile-icon" aria-hidden="true">
                 <svg class="icon-brand"><use href="img/icons.svg#icon-brand-discord"></use></svg>
@@ -364,9 +382,9 @@
       <section class="section" id="jeux">
         <div class="container">
           <div class="section-heading reveal">
-            <span class="kicker">Gaming</span>
-            <h2>Gaming profiles</h2>
-            <p>Main game profiles and Riot tag in one place.</p>
+            <span class="kicker" data-i18n="gaming.kicker">Gaming</span>
+            <h2 data-i18n="gaming.title">Gaming profiles</h2>
+            <p data-i18n="gaming.description">Main game profiles and Riot tag in one place.</p>
           </div>
 
           <div class="links-grid links-grid--games">
@@ -414,6 +432,7 @@
               data-brand="riot"
               data-copy="Yuzuctus#OSU"
               aria-label="Copy Riot Games username"
+              data-i18n-aria-label="gaming.riotAria"
             >
               <span class="link-tile-icon" aria-hidden="true">
                 <svg class="icon-brand"><use href="img/icons.svg#icon-brand-riotgames"></use></svg>
@@ -433,8 +452,8 @@
       <section class="section" id="projets">
         <div class="container">
           <div class="section-heading reveal">
-            <span class="kicker">Other projects</span>
-            <h2>Tools and side builds</h2>
+            <span class="kicker" data-i18n="projects.kicker">Other projects</span>
+            <h2 data-i18n="projects.title">Tools and side builds</h2>
           </div>
 
           <div class="projects-grid">
@@ -443,9 +462,8 @@
                 <div class="rock-icon"><svg class="icon-brand" aria-hidden="true"><use href="img/icons.svg#icon-brand-github"></use></svg></div>
               <h3>Nectar Render</h3>
               </div>
-              <p>
-                Convert Markdown to PDF or HTML with live preview,
-                custom themes, and precise export control.
+              <p data-i18n="projects.nectarDescription">
+                Convert Markdown to PDF or HTML with live preview, custom themes, and precise export control.
               </p>
               <div class="project-actions">
                 <button
@@ -453,8 +471,9 @@
                   class="btn btn--cactus btn--sm"
                   disabled
                   aria-label="Site coming soon"
+                  data-i18n-aria-label="projects.nectarComingSoonAria"
                 >
-                  Coming soon
+                  <span data-i18n="projects.comingSoon">Coming soon</span>
                 </button>
                 <a
                   href="https://github.com/Yuzuctus/Nectar-Render"
@@ -475,7 +494,7 @@
                 <div class="rock-icon"><svg class="icon-stroke" aria-hidden="true"><use href="img/icons.svg#icon-bolt"></use></svg></div>
                 <h3>YuZest</h3>
               </div>
-              <p>My private short-link service for clean URLs and instant sharing.</p>
+              <p data-i18n="projects.yuzestDescription">My private short-link service for clean URLs and instant sharing.</p>
               <div class="project-actions">
                 <a
                   href="https://zest.yuzuctus.fr/"
@@ -486,7 +505,7 @@
                   <svg class="inline-icon icon-stroke" aria-hidden="true">
                     <use href="img/icons.svg#icon-external-link"></use>
                   </svg>
-                  Open
+                  <span data-i18n="projects.open">Open</span>
                 </a>
               </div>
             </article>
@@ -496,9 +515,8 @@
                 <div class="rock-icon"><svg class="icon-stroke" aria-hidden="true"><use href="img/icons.svg#icon-photo"></use></svg></div>
               <h3>Yuzu osu! Skins</h3>
               </div>
-              <p>
-                A curated osu! skin hub to browse, preview,
-                and download my go-to picks.
+              <p data-i18n="projects.skinsDescription">
+                A curated osu! skin hub to browse, preview, and download my go-to picks.
               </p>
               <div class="project-actions">
                 <a
@@ -510,7 +528,7 @@
                   <svg class="inline-icon icon-stroke" aria-hidden="true">
                     <use href="img/icons.svg#icon-external-link"></use>
                   </svg>
-                  Open site
+                  <span data-i18n="projects.openSite">Open site</span>
                 </a>
                 <a
                   href="https://github.com/Yuzuctus/OsuYuzu-Skins"
@@ -528,6 +546,27 @@
           </div>
         </div>
       </section>
+
+      <section class="section" id="music">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="kicker" data-i18n="music.kicker">Favorite albums</span>
+            <h2 data-i18n="music.title">Album gallery</h2>
+            <p data-i18n="music.description">
+              A few records I replay all the time. Click a cover to open direct streaming links.
+            </p>
+          </div>
+
+          <div
+            class="music-gallery"
+            id="music-gallery"
+            role="list"
+            aria-label="Favorite album covers"
+            data-i18n-aria-label="music.galleryAria"
+          ></div>
+
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -536,8 +575,8 @@
           <span class="wordmark-first">Yuzuc</span
           ><span class="wordmark-rest">tus</span>
         </a>
-        <nav class="footer-links" aria-label="Footer links">
-          <a href="#top">Back to top</a>
+        <nav class="footer-links" aria-label="Footer links" data-i18n-aria-label="footer.linksAria">
+          <a href="#top" data-i18n="footer.backToTop">Back to top</a>
           <a
             href="https://github.com/Yuzuctus"
             target="_blank"
@@ -545,21 +584,11 @@
             >GitHub</a
           >
         </nav>
-        <p>
+        <p data-i18n-html="footer.creditsHtml">
           Built by Yuzuctus. Character art by
-          <a
-            href="https://x.com/Kourihase"
-            target="_blank"
-            rel="noopener noreferrer"
-            >KouriHase</a
-          >
+          <a href="https://x.com/Kourihase" target="_blank" rel="noopener noreferrer">KouriHase</a>
           and
-          <a
-            href="https://x.com/dreepies"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Joa</a
-          >.
+          <a href="https://x.com/dreepies" target="_blank" rel="noopener noreferrer">Joa</a>.
         </p>
       </div>
     </footer>
