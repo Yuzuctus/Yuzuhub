@@ -1,596 +1,208 @@
 <!doctype html>
-<html lang="en" data-theme="day">
+<html lang="fr" data-theme="light">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Official Yuzuctus hub on yuzuctus.fr: projects, socials, and practical tools built in my own style."
-      data-i18n-content="meta.description"
-    />
-    <meta name="robots" content="index,follow,max-image-preview:large" />
-    <meta name="theme-color" content="#fff8f0" />
-    <link rel="canonical" href="https://yuzuctus.fr/" />
-
-    <meta
-      property="og:title"
-      content="Yuzuctus | projects, socials, and tools"
-      data-i18n-content="meta.title"
-    />
-    <meta
-      property="og:description"
-      content="Official Yuzuctus hub on yuzuctus.fr: projects, socials, and practical tools built in my own style."
-      data-i18n-content="meta.description"
-    />
-    <meta property="og:site_name" content="Yuzuctus" />
-    <meta property="og:locale" content="en_US" data-i18n-content="meta.ogLocale" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fcf7ee" />
+    <title>Yuzuctus — projets et profils</title>
+    <meta name="description" content="Découvrez les projets web et logiciels de Yuzuctus, FM.Yuzuctus et ses profils en ligne." />
+    <meta property="og:title" content="Yuzuctus — projets et profils" />
+    <meta property="og:description" content="Projets web et logiciels de Yuzuctus, FM.Yuzuctus et profils en ligne." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://yuzuctus.fr/" />
-    <meta property="og:image" content="https://yuzuctus.fr/img/avatar.avif" />
-
+    <meta property="og:locale" content="fr_FR" />
     <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Yuzuctus | projects, socials, and tools"
-      data-i18n-content="meta.title"
-    />
-    <meta
-      name="twitter:description"
-      content="Official Yuzuctus hub on yuzuctus.fr: projects, socials, and practical tools built in my own style."
-      data-i18n-content="meta.description"
-    />
-    <meta name="twitter:site" content="@Yuzuctus" />
-    <meta name="twitter:creator" content="@Yuzuctus" />
-    <meta name="twitter:image" content="https://yuzuctus.fr/img/avatar.avif" />
-
-    <link rel="icon" type="image/avif" href="img/avatar.avif" />
-    <link rel="apple-touch-icon" href="img/avatar.avif" />
-
-    <title data-i18n="meta.title">Yuzuctus | projects, socials, and tools</title>
-
+    <link rel="canonical" href="https://yuzuctus.fr/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="css/tokens.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/theming.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/navigation.css" />
-    <link rel="stylesheet" href="css/buttons.css" />
-    <link rel="stylesheet" href="css/surfaces.css" />
-    <link rel="stylesheet" href="css/forms.css" />
-    <link rel="stylesheet" href="css/motion.css" />
-    <link rel="stylesheet" href="css/hub.css" />
-    <script src="js/app.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800;900&family=DM+Mono:wght@400;500&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/tokens.css?v=20260925" />
+    <link rel="stylesheet" href="css/hub.css?v=20260925-3" />
+    <script src="js/app.js?v=20260925-3" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            "@id": "https://yuzuctus.fr/#website",
-            "url": "https://yuzuctus.fr/",
-            "name": "Yuzuctus",
-            "inLanguage": "en-US"
-          },
-          {
-            "@type": "Person",
-            "@id": "https://yuzuctus.fr/#person",
-            "name": "Yuzuctus",
-            "url": "https://yuzuctus.fr/",
-            "image": "https://yuzuctus.fr/img/avatar.avif",
-            "sameAs": [
-              "https://github.com/Yuzuctus",
-              "https://x.com/Yuzuctus",
-              "https://www.reddit.com/user/Turnip-Unique/",
-              "https://www.twitch.tv/yuzuctus",
-              "https://www.youtube.com/@Yuzuctus",
-              "https://www.tiktok.com/@yuzuctus",
-              "https://osu.ppy.sh/users/14062291",
-              "https://steamcommunity.com/id/Yuzuctus/"
-            ]
-          }
+        "@type": "Person",
+        "name": "Yuzuctus",
+        "url": "https://yuzuctus.fr/",
+        "description": "Projets web et logiciels personnels.",
+        "sameAs": [
+          "https://github.com/Yuzuctus",
+          "https://x.com/Yuzuctus",
+          "https://www.youtube.com/@Yuzuctus",
+          "https://www.tiktok.com/@yuzuctus",
+          "https://www.twitch.tv/yuzuctus",
+          "https://osu.ppy.sh/users/14062291"
         ]
       }
     </script>
   </head>
   <body>
-    <nav
-      class="desert-nav"
-      role="navigation"
-      aria-label="Main navigation"
-      data-i18n-aria-label="nav.mainAria"
-    >
-      <a href="#top" class="desert-nav-brand wordmark" aria-current="page">
-        <span class="wordmark-first">Yuzuc</span
-        ><span class="wordmark-rest">tus</span>
-      </a>
-      <div class="desert-nav-links">
-        <a href="#projet" class="desert-nav-link" data-i18n="nav.featured">Featured</a>
-        <a href="#reseaux" class="desert-nav-link" data-i18n="nav.socials">Socials</a>
-        <a href="#jeux" class="desert-nav-link" data-i18n="nav.gaming">Gaming</a>
-        <a href="#projets" class="desert-nav-link" data-i18n="nav.projects">Projects</a>
-        <a href="#music" class="desert-nav-link" data-i18n="nav.music">Music</a>
-      </div>
-      <div class="desert-nav-controls">
-        <div
-          class="lang-switch"
-          role="group"
-          aria-label="Language selector"
-          data-i18n-aria-label="language.selectorAria"
-        >
-          <button type="button" class="lang-switch-btn" data-lang-option="en" aria-pressed="true">EN</button>
-          <button type="button" class="lang-switch-btn" data-lang-option="fr" aria-pressed="false">FR</button>
-        </div>
-        <button
-          class="theme-toggle desert-nav-toggle"
-          type="button"
-          aria-label="Switch to night mode"
-        >
-          <svg class="theme-toggle-icon icon-moon icon-stroke" aria-hidden="true">
-            <use href="img/icons.svg#icon-moon"></use>
-          </svg>
-          <svg class="theme-toggle-icon icon-sun icon-stroke" aria-hidden="true">
-            <use href="img/icons.svg#icon-sun"></use>
-          </svg>
-        </button>
-      </div>
-    </nav>
-
-    <main>
-      <header class="hero section" id="top">
-        <div class="hero-content">
-          <span class="kicker">Yuzuhub</span>
-          <h1 class="hero-title">Yuzu<em>ctus</em></h1>
-          <p class="hero-subtitle" data-i18n="hero.subtitle">
-            I build practical web tools with personality: sharp, playful, and clean.
-          </p>
-          <p class="text-muted" data-i18n="hero.muted">
-            This is my home base for projects, profiles, and experiments shipped in public.
-          </p>
-          <div class="hero-actions">
-            <a href="#projet" class="btn btn--cactus" data-i18n="hero.ctaFeatured">See featured project</a>
-            <a href="#reseaux" class="btn btn--pebble" data-i18n="hero.ctaFindMe">Find me online</a>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Aller au contenu</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="wordmark" href="#top" aria-label="Yuzuctus — accueil" data-i18n-aria-label="nav.home">YUZU<span>CTUS</span></a>
+        <nav class="site-nav" aria-label="Navigation principale" data-i18n-aria-label="nav.aria">
+          <a href="#projects" data-section-link="projects" data-i18n="nav.projects">Projets</a>
+          <a href="#fm" data-section-link="fm">FM.Yuzuctus</a>
+          <a href="#profiles" data-section-link="profiles" data-i18n="nav.profiles">Profils</a>
+          <a href="#credits" data-section-link="credits" data-i18n="nav.credits">Crédits</a>
+        </nav>
+        <div class="site-controls">
+          <div class="language-switch" role="group" aria-label="Langue" data-i18n-aria-label="nav.language">
+            <button type="button" data-lang-option="fr" aria-pressed="true">FR</button>
+            <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
           </div>
+          <button class="theme-toggle" type="button" aria-label="Passer en thème sombre" aria-pressed="false"><span data-theme-label>Sombre</span></button>
         </div>
-        <div class="hero-portrait">
-          <img
-            class="animate-sway-sm"
-            src="img/Yuzu_Joazoom-ver-nobg.png"
-            alt="Official Yuzuctus avatar"
-            data-i18n-alt="hero.avatarAlt"
-            width="512"
-            height="512"
-            loading="eager"
-          />
-        </div>
-      </header>
+      </div>
+    </header>
 
-      <section class="section" id="projet">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="kicker" data-i18n="featured.kicker">Featured project</span>
-            <h2>Osurea.yuzuctus.fr</h2>
-            <p data-i18n="featured.description">
-              My flagship project for comparing tablet area setups, visualizing differences, and sharing settings quickly.
-            </p>
+    <main id="main">
+      <section class="hero" id="top" data-section="top" aria-labelledby="t-home">
+        <div class="hero__inner">
+          <div class="hero__copy">
+            <p class="eyebrow" data-i18n="hero.kicker">PROJETS PERSONNELS / YUZUCTUS.FR</p>
+            <h1 id="t-home"><span>YUZU</span><span class="hero__title-accent">CTUS</span></h1>
+            <p class="hero__lead" data-i18n="hero.lead">Je construis des outils autour d’osu!, de la musique et de ce que j’aime explorer.</p>
+            <div class="hero__actions">
+              <a class="action action--solid" href="#projects" data-i18n="hero.projects">Voir les projets ↓</a>
+              <a class="action action--text" href="#profiles" data-i18n="hero.profiles">Trouver mes profils ↗</a>
+            </div>
           </div>
+          <figure class="hero__portrait">
+            <div class="hero__shape" aria-hidden="true"></div>
+            <img src="img/Characters/vgentou7.2-ct-web_Mazuko.png" alt="Portrait illustré de Yuzu par Mazuko" data-i18n-alt="hero.portraitAlt" width="1200" height="1200" fetchpriority="high" decoding="async" />
+            <figcaption><span data-i18n="hero.artBy">Illustration par</span> <a href="https://vgen.co/Mazuko" target="_blank" rel="noopener noreferrer">Mazuko</a></figcaption>
+          </figure>
+        </div>
+      </section>
 
-          <article class="feature-shell reveal delay-1">
-            <div class="feature-content">
-              <p class="feature-meta">Osurea.yuzuctus.fr</p>
-              <h3>Osurea</h3>
-              <p data-i18n="featured.body">
-                A focused app to compare tablet area setups, spot differences fast, and share exact values.
-              </p>
-              <div class="feature-actions">
-                <a
-                  href="https://osurea.yuzuctus.fr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn--cactus btn--sm"
-                >
-                  <svg class="inline-icon icon-stroke" aria-hidden="true">
-                    <use href="img/icons.svg#icon-external-link"></use>
-                  </svg>
-                  <span data-i18n="featured.openApp">Open app</span>
-                </a>
-                <a
-                  href="https://github.com/Yuzuctus/Osurea"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn--pebble btn--sm"
-                >
-                  <svg class="inline-icon icon-brand" aria-hidden="true">
-                    <use href="img/icons.svg#icon-brand-github"></use>
-                  </svg>
-                  GitHub
-                </a>
+      <section class="projects" data-section="projects" aria-labelledby="t-osurea">
+        <div class="osurea-band"><div class="page-wrap"><small data-i18n="osurea.bandLabel">PROJET À LA UNE</small><strong>OSUREA</strong><span data-i18n="osurea.bandText">Comparer deux réglages côte à côte</span></div></div>
+        <div class="page-wrap">
+          <article class="featured-project" aria-labelledby="t-osurea">
+            <div class="featured-project__copy">
+              <p class="eyebrow" data-i18n="osurea.kind">OUTIL POUR OSU!</p>
+              <h2 id="t-osurea">Osurea</h2>
+              <p class="featured-project__lead" data-i18n="osurea.body">Comparer deux réglages côte à côte, comprendre leur différence et partager une configuration précise.</p>
+              <div class="project-actions">
+                <a class="action action--solid" href="https://osurea.yuzuctus.fr" target="_blank" rel="noopener noreferrer" data-i18n="osurea.open">Ouvrir Osurea ↗</a>
+                <a class="action action--text" href="https://github.com/Yuzuctus/Osurea" target="_blank" rel="noopener noreferrer" data-i18n="osurea.source">Code source ↗</a>
               </div>
             </div>
-            <a
-              href="https://osurea.yuzuctus.fr"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="feature-visual"
-              aria-label="View Osurea preview"
-              data-i18n-aria-label="featured.previewAria"
-            >
-              <img
-                src="img/osurea-preview.png"
-                alt="Preview of the Osurea interface"
-                data-i18n-alt="featured.previewAlt"
-                width="1470"
-                height="882"
-                loading="lazy"
-              />
-            </a>
+            <figure class="featured-project__visual">
+              <img src="img/osurea-preview.png" alt="Capture de l’interface Osurea pour comparer deux réglages côte à côte." data-i18n-alt="osurea.alt" width="1440" height="900" loading="lazy" decoding="async" />
+              <figcaption data-i18n="osurea.caption">Capture de l’interface Osurea</figcaption>
+            </figure>
           </article>
-        </div>
-      </section>
 
-      <section class="section" id="reseaux">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="kicker" data-i18n="social.kicker">Social</span>
-            <h2 data-i18n="social.title">Socials and channels</h2>
-            <p data-i18n="social.description">Follow my updates, videos, and latest builds.</p>
-          </div>
-
-          <div class="links-grid links-grid--social">
-            <a
-              href="https://x.com/Yuzuctus"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="link-tile reveal"
-              data-brand="x"
-            >
-              <span class="link-tile-icon" aria-hidden="true">
-                <svg class="icon-brand"><use href="img/icons.svg#icon-brand-x"></use></svg>
-              </span>
-              <span class="link-tile-content">
-                <span class="link-tile-title">X</span>
-                <span class="link-tile-subtitle">@Yuzuctus</span>
-              </span>
-              <span class="link-tile-arrow" aria-hidden="true">
-                <svg class="icon-stroke"><use href="img/icons.svg#icon-arrow-right"></use></svg>
-              </span>
-            </a>
-
-            <a
-              href="https://github.com/Yuzuctus"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="link-tile reveal delay-1"
-              data-brand="github"
-            >
-              <span class="link-tile-icon" aria-hidden="true">
-                <svg class="icon-brand"><use href="img/icons.svg#icon-brand-github"></use></svg>
-              </span>
-              <span class="link-tile-content">
-                <span class="link-tile-title">GitHub</span>
-                <span class="link-tile-subtitle">@Yuzuctus</span>
-              </span>
-              <span class="link-tile-arrow" aria-hidden="true">
-                <svg class="icon-stroke"><use href="img/icons.svg#icon-arrow-right"></use></svg>
-              </span>
-            </a>
-
-            <a
-              href="https://www.reddit.com/user/Turnip-Unique/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="link-tile reveal delay-2"
-              data-brand="reddit"
-            >
-              <span class="link-tile-icon" aria-hidden="true">
-                <svg class="icon-brand"><use href="img/icons.svg#icon-brand-reddit"></use></svg>
-              </span>
-              <span class="link-tile-content">
-                <span class="link-tile-title">Reddit</span>
-                <span class="link-tile-subtitle">u/Turnip-Unique</span>
-              </span>
-              <span class="link-tile-arrow" aria-hidden="true">
-                <svg class="icon-stroke"><use href="img/icons.svg#icon-arrow-right"></use></svg>
-              </span>
-            </a>
-
-            <button
-              type="button"
-              class="link-tile reveal delay-3"
-              data-brand="discord"
-              data-copy="yuzuctus"
-              aria-label="Copy Discord username"
-              data-i18n-aria-label="social.discordAria"
-            >
-              <span class="link-tile-icon" aria-hidden="true">
-                <svg class="icon-brand"><use href="img/icons.svg#icon-brand-discord"></use></svg>
-              </span>
-              <span class="link-tile-content">
-                <span class="link-tile-title">Discord</span>
-                <span class="link-tile-subtitle">@yuzuctus</span>
-              </span>
-              <span class="link-tile-arrow" aria-hidden="true">
-                <svg class="icon-stroke"><use href="img/icons.svg#icon-copy"></use></svg>
-              </span>
-            </button>
-
-            <a
-              href="https://www.twitch.tv/yuzuctus"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="link-tile reveal delay-4"
-              data-brand="twitch"
-            >
-              <span class="link-tile-icon" aria-hidden="true">
-                <svg class="icon-brand"><use href="img/icons.svg#icon-brand-twitch"></use></svg>
-              </span>
-              <span class="link-tile-content">
-                <span class="link-tile-title">Twitch</span>
-                <span class="link-tile-subtitle">yuzuctus</span>
-              </span>
-              <span class="link-tile-arrow" aria-hidden="true">
-                <svg class="icon-stroke"><use href="img/icons.svg#icon-arrow-right"></use></svg>
-              </span>
-            </a>
-
-            <a
-              href="https://www.youtube.com/@Yuzuctus"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="link-tile reveal delay-5"
-              data-brand="youtube"
-            >
-              <span class="link-tile-icon" aria-hidden="true">
-                <svg class="icon-brand"><use href="img/icons.svg#icon-brand-youtube"></use></svg>
-              </span>
-              <span class="link-tile-content">
-                <span class="link-tile-title">YouTube</span>
-                <span class="link-tile-subtitle">@Yuzuctus</span>
-              </span>
-              <span class="link-tile-arrow" aria-hidden="true">
-                <svg class="icon-stroke"><use href="img/icons.svg#icon-arrow-right"></use></svg>
-              </span>
-            </a>
-
-            <a
-              href="https://www.tiktok.com/@yuzuctus"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="link-tile reveal delay-6"
-              data-brand="tiktok"
-            >
-              <span class="link-tile-icon" aria-hidden="true">
-                <svg class="icon-brand"><use href="img/icons.svg#icon-brand-tiktok"></use></svg>
-              </span>
-              <span class="link-tile-content">
-                <span class="link-tile-title">TikTok</span>
-                <span class="link-tile-subtitle">@yuzuctus</span>
-              </span>
-              <span class="link-tile-arrow" aria-hidden="true">
-                <svg class="icon-stroke"><use href="img/icons.svg#icon-arrow-right"></use></svg>
-              </span>
-            </a>
+          <div class="project-list-heading" id="projects"><h2 data-i18n="projects.title">Projets</h2><p data-i18n="projects.intro">Des outils web, une collection osu! et un logiciel de rendu.</p></div>
+          <div class="project-gallery">
+            <ul class="project-list" aria-label="Projets" data-i18n-aria-label="projects.title">
+              <li class="project-list__item project-list__item--zestecho"><a class="is-active" data-project-link="zestecho" href="https://zestecho.fr" target="_blank" rel="noopener noreferrer"><span class="project-list__signal" aria-hidden="true"></span><span class="project-list__copy"><strong>ZestEcho</strong><small data-i18n="projects.zestecho">Éditeur collaboratif en temps réel ; les invités rejoignent une session sans compte.</small></span><span class="project-list__destination">zestecho.fr ↗</span><span class="project-list__mini" aria-hidden="true">#_</span></a></li>
+              <li class="project-list__item project-list__item--yuzest"><a data-project-link="yuzest" href="https://zest.yuzuctus.fr" target="_blank" rel="noopener noreferrer"><span class="project-list__signal" aria-hidden="true"></span><span class="project-list__copy"><strong>YuZest</strong><small data-i18n="projects.yuzest">Service privé de liens courts à partir d’URL longues.</small></span><span class="project-list__destination">zest.yuzuctus.fr ↗</span><span class="project-list__mini" aria-hidden="true">z/</span></a></li>
+              <li class="project-list__item project-list__item--skins"><a data-project-link="skins" href="https://skins.yuzuctus.fr" target="_blank" rel="noopener noreferrer"><span class="project-list__signal" aria-hidden="true"></span><span class="project-list__copy"><strong>osu! Yuzu Skins</strong><small data-i18n="projects.skins">Collection osu!standard classée par préférence, avec aperçus et téléchargements.</small></span><span class="project-list__destination">skins.yuzuctus.fr ↗</span><span class="project-list__mini" aria-hidden="true">osu!</span></a></li>
+              <li class="project-list__item project-list__item--yuzucord"><a data-project-link="yuzucord" href="https://github.com/Yuzuctus/YuzuCord" target="_blank" rel="noopener noreferrer"><span class="project-list__signal" aria-hidden="true"></span><span class="project-list__copy"><strong>YuzuCord</strong><small data-i18n="projects.yuzucord">Distribution Windows de Vencord avec plugins tiers identifiés.</small></span><span class="project-list__destination">GitHub ↗</span><span class="project-list__mini" aria-hidden="true">YC</span></a></li>
+              <li class="project-list__item project-list__item--nectar"><a data-project-link="nectar" href="https://github.com/Yuzuctus/Nectar-Render" target="_blank" rel="noopener noreferrer"><span class="project-list__signal" aria-hidden="true"></span><span class="project-list__copy"><strong>Nectar Render</strong><small data-i18n="projects.nectar">Conversion Markdown vers PDF ou HTML, avec aperçu direct et thèmes personnalisés.</small></span><span class="project-list__destination">GitHub ↗</span><span class="project-list__mini" aria-hidden="true">MD↗</span></a></li>
+            </ul>
+            <aside class="project-preview" aria-label="Aperçu du projet sélectionné" data-i18n-aria-label="projects.previewArea">
+              <article class="project-preview__item" data-project-preview="zestecho">
+                <div class="project-preview__heading"><span data-i18n="projects.previewLabel">APERÇU</span><span data-i18n="projects.zestechoType">ÉDITION COLLABORATIVE</span></div>
+                <div class="project-scene project-scene--zestecho" aria-hidden="true"><div class="project-scene__top"><span>ZestEcho</span><span>notes-equipe.zestecho.fr</span></div><div class="project-scene__editor"><span class="project-scene__gutter">01<br>02<br>03<br>04<br>05</span><div><strong># Notes de réunion</strong><i></i><i></i><i></i><i></i></div></div><span class="project-scene__corner">↗</span></div>
+                <div class="project-preview__foot"><strong>ZestEcho</strong><a href="https://zestecho.fr" target="_blank" rel="noopener noreferrer" data-i18n="projects.open">Ouvrir le projet ↗</a></div>
+              </article>
+              <article class="project-preview__item" data-project-preview="yuzest" hidden>
+                <div class="project-preview__heading"><span data-i18n="projects.previewLabel">APERÇU</span><span data-i18n="projects.yuzestType">LIENS COURTS PRIVÉS</span></div>
+                <div class="project-scene project-scene--yuzest" aria-hidden="true"><span class="project-scene__overline">IL NE RESTE QUE LE</span><strong>YU<span>ZEST</span></strong><div class="project-scene__link"><span>URL LONGUE</span><b>→</b><span>LIEN COURT</span></div></div>
+                <div class="project-preview__foot"><strong>YuZest</strong><a href="https://zest.yuzuctus.fr" target="_blank" rel="noopener noreferrer" data-i18n="projects.open">Ouvrir le projet ↗</a></div>
+              </article>
+              <article class="project-preview__item" data-project-preview="skins" hidden>
+                <div class="project-preview__heading"><span data-i18n="projects.previewLabel">APERÇU</span><span data-i18n="projects.skinsType">COLLECTION OSU!STANDARD</span></div>
+                <div class="project-scene project-scene--skins" aria-hidden="true"><div class="project-scene__skins-capture"><img src="img/skins-collection-preview.png" alt="" width="1920" height="1078" loading="lazy" decoding="async" /></div></div>
+                <div class="project-preview__foot"><strong>osu! Yuzu Skins</strong><a href="https://skins.yuzuctus.fr" target="_blank" rel="noopener noreferrer" data-i18n="projects.open">Ouvrir le projet ↗</a></div>
+              </article>
+              <article class="project-preview__item" data-project-preview="yuzucord" hidden>
+                <div class="project-preview__heading"><span data-i18n="projects.previewLabel">APERÇU</span><span data-i18n="projects.yuzucordType">DISTRIBUTION WINDOWS</span></div>
+                <div class="project-scene project-scene--yuzucord" aria-hidden="true"><div class="project-scene__top"><span>YUZUCORD</span><span>WINDOWS</span></div><strong>Yuzu<br>Cord<span>.</span></strong><div class="project-scene__cordline"><span>VENCORD</span><span>PLUGINS TIERS</span></div></div>
+                <div class="project-preview__foot"><strong>YuzuCord</strong><a href="https://github.com/Yuzuctus/YuzuCord" target="_blank" rel="noopener noreferrer" data-i18n="projects.open">Ouvrir le projet ↗</a></div>
+              </article>
+              <article class="project-preview__item" data-project-preview="nectar" hidden>
+                <div class="project-preview__heading"><span data-i18n="projects.previewLabel">APERÇU</span><span data-i18n="projects.nectarType">MARKDOWN VERS PDF / HTML</span></div>
+                <div class="project-scene project-scene--nectar" aria-hidden="true"><div class="project-scene__top"><span>NECTAR RENDER</span><span>EXPORT</span></div><div class="project-scene__flow"><div class="project-scene__source"><span>MARKDOWN</span><i></i><i></i><i></i><i></i></div><b>→</b><div class="project-scene__output"><span>PDF / HTML</span><i></i><i></i><i></i></div></div></div>
+                <div class="project-preview__foot"><strong>Nectar Render</strong><a href="https://github.com/Yuzuctus/Nectar-Render" target="_blank" rel="noopener noreferrer" data-i18n="projects.open">Ouvrir le projet ↗</a></div>
+              </article>
+            </aside>
           </div>
         </div>
       </section>
 
-      <section class="section" id="jeux">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="kicker" data-i18n="gaming.kicker">Gaming</span>
-            <h2 data-i18n="gaming.title">Gaming profiles</h2>
-            <p data-i18n="gaming.description">Main game profiles and Riot tag in one place.</p>
+      <section class="fm-section" id="fm" data-section="fm" aria-labelledby="t-fm">
+        <div class="page-wrap fm-section__inner">
+          <div class="fm-section__copy">
+            <div class="fm-section__status"><span class="eyebrow" data-i18n="fm.kind">PROJET MUSICAL</span><strong data-i18n="fm.availability">ACCÈS SUR INVITATION</strong></div>
+            <h2 id="t-fm">FM.<span>Yuzuctus</span></h2>
+            <p class="fm-section__statement" data-i18n="fm.statement">Statistiques d’écoute, profil public et présence Discord.</p>
+            <p class="fm-section__body" data-i18n="fm.body">FM.Yuzuctus rassemble l’historique d’écoute, la présence Discord et un profil public partageable.</p>
+            <div class="fm-actions">
+              <a class="action action--fm" href="https://fm.yuzuctus.fr" target="_blank" rel="noopener noreferrer" data-i18n="fm.open">Découvrir FM.Yuzuctus ↗</a>
+              <a class="action action--fm action--fm-secondary" href="https://fm.yuzuctus.fr/u/yuzuctus" target="_blank" rel="noopener noreferrer" data-i18n="fm.profileCta">Découvrir le profil de Yuzuctus ↗</a>
+            </div>
           </div>
-
-          <div class="links-grid links-grid--games">
-            <a
-              href="https://osu.ppy.sh/users/14062291"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="link-tile reveal"
-              data-brand="osu"
-            >
-              <span class="link-tile-icon" aria-hidden="true">
-                <svg class="icon-brand"><use href="img/icons.svg#icon-brand-osu"></use></svg>
-              </span>
-              <span class="link-tile-content">
-                <span class="link-tile-title">osu!</span>
-                <span class="link-tile-subtitle">Yuzuctus</span>
-              </span>
-              <span class="link-tile-arrow" aria-hidden="true">
-                <svg class="icon-stroke"><use href="img/icons.svg#icon-arrow-right"></use></svg>
-              </span>
-            </a>
-
-            <a
-              href="https://steamcommunity.com/id/Yuzuctus/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="link-tile reveal delay-1"
-              data-brand="steam"
-            >
-              <span class="link-tile-icon" aria-hidden="true">
-                <svg class="icon-brand"><use href="img/icons.svg#icon-brand-steam"></use></svg>
-              </span>
-              <span class="link-tile-content">
-                <span class="link-tile-title">Steam</span>
-                <span class="link-tile-subtitle">Yuzuctus</span>
-              </span>
-              <span class="link-tile-arrow" aria-hidden="true">
-                <svg class="icon-stroke"><use href="img/icons.svg#icon-arrow-right"></use></svg>
-              </span>
-            </a>
-
-            <button
-              type="button"
-              class="link-tile reveal delay-2"
-              data-brand="riot"
-              data-copy="Yuzuctus#OSU"
-              aria-label="Copy Riot Games username"
-              data-i18n-aria-label="gaming.riotAria"
-            >
-              <span class="link-tile-icon" aria-hidden="true">
-                <svg class="icon-brand"><use href="img/icons.svg#icon-brand-riotgames"></use></svg>
-              </span>
-              <span class="link-tile-content">
-                <span class="link-tile-title">Riot Games</span>
-                <span class="link-tile-subtitle">Yuzuctus#OSU</span>
-              </span>
-              <span class="link-tile-arrow" aria-hidden="true">
-                <svg class="icon-stroke"><use href="img/icons.svg#icon-copy"></use></svg>
-              </span>
-            </button>
+          <div class="fm-section__details" aria-label="Fonctions de FM.Yuzuctus" data-i18n-aria-label="fm.detailsLabel">
+            <p class="eyebrow" data-i18n="fm.detailsLabel">CE QUE LE PROJET RÉUNIT</p>
+            <dl>
+              <div><dt data-i18n="fm.statistics">Statistiques d’écoute</dt><dd data-i18n="fm.statisticsDesc">Activité musicale, artistes, titres et albums analysés au fil des écoutes.</dd></div>
+              <div><dt data-i18n="fm.profile">Profil public</dt><dd data-i18n="fm.profileDesc">Un espace partageable dont tu contrôles les sections.</dd></div>
+              <div><dt data-i18n="fm.presence">Présence Discord</dt><dd data-i18n="fm.presenceDesc">La musique écoutée en direct depuis Android et Windows.</dd></div>
+            </dl>
           </div>
         </div>
       </section>
 
-      <section class="section" id="projets">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="kicker" data-i18n="projects.kicker">Other projects</span>
-            <h2 data-i18n="projects.title">Tools and side builds</h2>
-          </div>
-
-          <div class="projects-grid">
-            <article class="rock reveal">
-              <div class="rock-header">
-                <div class="rock-icon"><svg class="icon-brand" aria-hidden="true"><use href="img/icons.svg#icon-brand-github"></use></svg></div>
-              <h3>Nectar Render</h3>
-              </div>
-              <p data-i18n="projects.nectarDescription">
-                Convert Markdown to PDF or HTML with live preview, custom themes, and precise export control.
-              </p>
-              <div class="project-actions">
-                <button
-                  type="button"
-                  class="btn btn--cactus btn--sm"
-                  disabled
-                  aria-label="Site coming soon"
-                  data-i18n-aria-label="projects.nectarComingSoonAria"
-                >
-                  <span data-i18n="projects.comingSoon">Coming soon</span>
-                </button>
-                <a
-                  href="https://github.com/Yuzuctus/Nectar-Render"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn--pebble btn--sm"
-                >
-                  <svg class="inline-icon icon-brand" aria-hidden="true">
-                    <use href="img/icons.svg#icon-brand-github"></use>
-                  </svg>
-                  GitHub
-                </a>
-              </div>
-            </article>
-
-            <article class="rock reveal delay-1">
-              <div class="rock-header">
-                <div class="rock-icon"><svg class="icon-stroke" aria-hidden="true"><use href="img/icons.svg#icon-bolt"></use></svg></div>
-                <h3>YuZest</h3>
-              </div>
-              <p data-i18n="projects.yuzestDescription">My private short-link service for clean URLs and instant sharing.</p>
-              <div class="project-actions">
-                <a
-                  href="https://zest.yuzuctus.fr/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn--cactus btn--sm"
-                >
-                  <svg class="inline-icon icon-stroke" aria-hidden="true">
-                    <use href="img/icons.svg#icon-external-link"></use>
-                  </svg>
-                  <span data-i18n="projects.open">Open</span>
-                </a>
-              </div>
-            </article>
-
-            <article class="rock reveal delay-2">
-              <div class="rock-header">
-                <div class="rock-icon"><svg class="icon-stroke" aria-hidden="true"><use href="img/icons.svg#icon-photo"></use></svg></div>
-              <h3>Yuzu osu! Skins</h3>
-              </div>
-              <p data-i18n="projects.skinsDescription">
-                A curated osu! skin hub to browse, preview, and download my go-to picks.
-              </p>
-              <div class="project-actions">
-                <a
-                  href="https://skins.yuzuctus.fr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn--cactus btn--sm"
-                >
-                  <svg class="inline-icon icon-stroke" aria-hidden="true">
-                    <use href="img/icons.svg#icon-external-link"></use>
-                  </svg>
-                  <span data-i18n="projects.openSite">Open site</span>
-                </a>
-                <a
-                  href="https://github.com/Yuzuctus/OsuYuzu-Skins"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn--pebble btn--sm"
-                >
-                  <svg class="inline-icon icon-brand" aria-hidden="true">
-                    <use href="img/icons.svg#icon-brand-github"></use>
-                  </svg>
-                  GitHub
-                </a>
-              </div>
-            </article>
+      <section class="profiles" id="profiles" data-section="profiles" aria-labelledby="t-profiles">
+        <div class="page-wrap"><div class="section-heading"><h2 id="t-profiles" data-i18n="profiles.title">Profils</h2><p data-i18n="profiles.intro">Réseaux, code et jeux : les liens utiles au même endroit.</p></div>
+          <div class="profile-columns">
+            <section class="profile-group" aria-labelledby="t-social"><div class="profile-group__heading"><h3 id="t-social" data-i18n="profiles.social">Réseaux et code</h3><img src="img/Characters/yuzuchibi2_nobg_kourihase.png" data-oc-random="social" alt="" aria-hidden="true" width="120" height="120" loading="lazy" /></div><ul class="profile-list">
+              <li><a href="https://github.com/Yuzuctus" target="_blank" rel="noopener noreferrer"><strong>GitHub</strong><span>@Yuzuctus ↗</span></a></li>
+              <li><a href="https://x.com/Yuzuctus" target="_blank" rel="noopener noreferrer"><strong>X</strong><span>@Yuzuctus ↗</span></a></li>
+              <li><a href="https://www.youtube.com/@Yuzuctus" target="_blank" rel="noopener noreferrer"><strong>YouTube</strong><span>@Yuzuctus ↗</span></a></li>
+              <li><a href="https://www.tiktok.com/@yuzuctus" target="_blank" rel="noopener noreferrer"><strong>TikTok</strong><span>@yuzuctus ↗</span></a></li>
+              <li><a href="https://www.reddit.com/user/Turnip-Unique/" target="_blank" rel="noopener noreferrer"><strong>Reddit</strong><span>u/Turnip-Unique ↗</span></a></li>
+              <li><a href="https://www.twitch.tv/yuzuctus" target="_blank" rel="noopener noreferrer"><strong>Twitch</strong><span>yuzuctus ↗</span></a></li>
+              <li><button type="button" data-copy="@yuzuctus" data-i18n-aria-label="profiles.copyDiscord" aria-label="Copier le nom d’utilisateur Discord"><strong>Discord</strong><span data-copy-label>@yuzuctus</span></button></li>
+            </ul></section>
+            <section class="profile-group profile-group--games" aria-labelledby="t-games"><div class="profile-group__heading"><h3 id="t-games" data-i18n="profiles.games">Jeux</h3><img src="img/Characters/yuzuchibi3_nobg_kourihase.png" data-oc-random="games" alt="" aria-hidden="true" width="120" height="120" loading="lazy" /></div><ul class="profile-list">
+              <li><a href="https://osu.ppy.sh/users/14062291" target="_blank" rel="noopener noreferrer"><strong>osu!</strong><span>Yuzuctus ↗</span></a></li>
+              <li><a href="https://steamcommunity.com/id/Yuzuctus/" target="_blank" rel="noopener noreferrer"><strong>Steam</strong><span>Yuzuctus ↗</span></a></li>
+              <li><button type="button" data-copy="Yuzuctus#OSU" data-i18n-aria-label="profiles.copyRiot" aria-label="Copier le Riot ID"><strong>Riot Games</strong><span data-copy-label>Yuzuctus#OSU</span></button></li>
+            </ul></section>
           </div>
         </div>
       </section>
 
-      <section class="section" id="music">
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="kicker" data-i18n="music.kicker">Favorite albums</span>
-            <h2 data-i18n="music.title">Album gallery</h2>
-            <p data-i18n="music.description">
-              A few records I replay all the time. Click a cover to open direct streaming links.
-            </p>
+      <section class="closing" id="credits" data-section="credits" aria-labelledby="t-credits">
+        <div class="closing__art">
+          <img src="img/Characters/yuzuv2alt-web_kourihase.png" alt="Croquis illustré de Yuzu par Kourihase" data-i18n-alt="credits.artAlt" width="1200" height="1200" loading="lazy" decoding="async" />
+          <span data-i18n="credits.sketch">CROQUIS — KOURIHASE</span>
+        </div>
+        <div class="closing__copy">
+          <p class="eyebrow" data-i18n="credits.label">L’ORIGINE DU NOM</p>
+          <h2 id="t-credits"><span data-i18n="credits.line1">Une pâtisserie.</span><span data-i18n="credits.line2">Un cactus.</span><span data-i18n="credits.line3">Du yuzu.</span><span class="closing__name" data-i18n="credits.line4">Yuzuctus.</span></h2>
+          <div class="closing__credits">
+            <p class="closing__lore" data-i18n="credits.lore">Le lore tient littéralement dans une pâtisserie.</p>
+            <p data-i18n="credits.intro">Les illustrations de ce site ont été réalisées par ces artistes et sont utilisées avec leur accord.</p>
+            <ul>
+              <li><a href="https://vgen.co/Mazuko" target="_blank" rel="noopener noreferrer">Mazuko ↗</a><span data-i18n="credits.mazuko">Portrait d’accueil</span></li>
+              <li><a href="https://x.com/Kourihase" target="_blank" rel="noopener noreferrer">Kourihase ↗</a><span data-i18n="credits.kourihase">Croquis et chibis</span></li>
+              <li><a href="https://x.com/dreepies" target="_blank" rel="noopener noreferrer">Joa ↗</a><span data-i18n="credits.joa">Autres illustrations</span></li>
+            </ul>
           </div>
-
-          <div
-            class="music-gallery"
-            id="music-gallery"
-            role="list"
-            aria-label="Favorite album covers"
-            data-i18n-aria-label="music.galleryAria"
-          ></div>
-
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        <a href="#top" class="wordmark">
-          <span class="wordmark-first">Yuzuc</span
-          ><span class="wordmark-rest">tus</span>
-        </a>
-        <nav class="footer-links" aria-label="Footer links" data-i18n-aria-label="footer.linksAria">
-          <a href="#top" data-i18n="footer.backToTop">Back to top</a>
-          <a
-            href="https://github.com/Yuzuctus"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          >
-        </nav>
-        <p data-i18n-html="footer.creditsHtml">
-          Built by Yuzuctus. Character art by
-          <a href="https://x.com/Kourihase" target="_blank" rel="noopener noreferrer">KouriHase</a>
-          and
-          <a href="https://x.com/dreepies" target="_blank" rel="noopener noreferrer">Joa</a>.
-        </p>
-      </div>
-    </footer>
+    <footer class="site-footer"><div class="page-wrap site-footer__inner"><span>© <span data-year>2026</span> Yuzuctus</span></div></footer>
+    <button class="back-to-top" type="button" aria-label="Haut de page" data-i18n-aria-label="footer.topLabel"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M12 19V5m-7 7 7-7 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg></button>
   </body>
 </html>
