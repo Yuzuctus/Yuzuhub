@@ -1,0 +1,64 @@
+/* Yuzuhub — CUT × STRATA. Page-specific. The system carries the page. */
+
+/* ————— color fields
+   One colorful stratum at a time. Text on a solid is ALWAYS dark ink
+   (--on-mint / --on-cyan / --on-blush), never white, in either theme.
+   Every --ink-muted consumer has to be pinned by name, because --ink-muted is a
+   grey mixed for the page and it goes muddy on a solid. Pin it to the field ink
+   and let opacity carry the hierarchy. */
+.mint-field { background: var(--brand-mint); color: var(--on-mint); }
+.cyan-field { background: var(--brand-cyan); color: var(--on-cyan); }
+.blush-field { background: var(--brand-blush); color: var(--on-blush); }
+
+.mint-field .micro, .cyan-field .micro, .blush-field .micro,
+.mint-field .feat-sub, .cyan-field .feat-sub, .blush-field .feat-sub,
+.mint-field .dir-cat, .cyan-field .dir-cat, .blush-field .dir-cat,
+.mint-field .dir-num, .cyan-field .dir-num, .blush-field .dir-num { color: inherit; }
+.mint-field .micro, .cyan-field .micro { opacity: .75; }
+.blush-field .micro { opacity: .7; }
+.mint-field .feat-sub, .cyan-field .feat-sub, .blush-field .feat-sub { opacity: .82; }
+.mint-field .dir-cat, .cyan-field .dir-cat, .blush-field .dir-cat,
+.mint-field .dir-num, .cyan-field .dir-num, .blush-field .dir-num { opacity: .72; }
+
+.mint-field .btn-cut, .cyan-field .btn-cut, .blush-field .btn-cut { background: var(--inverse); color: var(--inverse-ink); }
+.mint-field .btn-cut:hover, .cyan-field .btn-cut:hover, .blush-field .btn-cut:hover { background: var(--brand-lemon); color: var(--on-lemon); }
+.mint-field .plain-link:hover { background: var(--on-mint); color: var(--brand-mint); }
+.cyan-field .plain-link:hover { background: var(--on-cyan); color: var(--brand-cyan); }
+.blush-field .plain-link:hover { background: var(--on-blush); color: var(--brand-blush); }
+
+/* ————— accent */
+.accent-mint { color: var(--brand-mint-deep); }
+
+/* ————— on rotation / liner notes
+   A list, not a gallery. Five records in two columns tell you more about a
+   person than twenty covers do, and they cost nothing to load. The rule is
+   translucent ink so it survives on any color field. */
+.liner { margin-top: 20px; max-width: 640px; }
+.liner-notes {
+  margin-top: 28px; padding-top: 16px; max-width: 540px;
+  border-top: 1px solid color-mix(in srgb, currentColor 28%, transparent);
+}
+.spin {
+  display: grid; grid-template-columns: 32px 1fr 1.4fr; gap: 4px 16px;
+  padding: 9px 0; border-bottom: 1px solid color-mix(in srgb, currentColor 28%, transparent);
+  font-size: 15px; margin: 0; max-width: none;
+}
+.spin-num { font-family: var(--font-func); font-size: 13px; opacity: .7; }
+.spin span:nth-child(2) { font-weight: 700; }
+.spin span:last-child { font-style: italic; }
+
+/* ————— colophon */
+.colophon {
+  margin-top: 32px; padding-top: 12px;
+  border-top: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+}
+
+/* ————— section head : number + title, editorial */
+.sec-head { margin-bottom: 14px; }
+.sec-head-lg { margin-bottom: 22px; }
+.mt-m { margin-top: 20px; }
+.mb-s { margin-bottom: 6px; }
+
+@media (max-width: 420px) {
+  .lang-switch { display: none; }
+}

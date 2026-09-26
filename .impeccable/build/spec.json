@@ -1,0 +1,1543 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-09-23T21:17:47.126Z",
+  "comp": ".impeccable/mocks/index-first-rail.png",
+  "warnings": [
+    "region osurea-mark: the artwork runs off the box on the right (its ink reaches the edge over 35% of that side). Widen the region so the box holds the whole shape with a margin; a plate placed with object-fit: cover on this box would be cut there.",
+    "region yuzucord-mark: the artwork runs off the box on the bottom (its ink reaches the edge over 35% of that side). Widen the region so the box holds the whole shape with a margin; a plate placed with object-fit: cover on this box would be cut there.",
+    "region nectar-mark: the artwork runs off the box on the top (its ink reaches the edge over 35% of that side). Widen the region so the box holds the whole shape with a margin; a plate placed with object-fit: cover on this box would be cut there."
+  ],
+  "uncoveredInkCells": [
+    "H1",
+    "B3",
+    "H3"
+  ],
+  "compSize": {
+    "width": 1586,
+    "height": 992
+  },
+  "aspect": 1.5988,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#f6f8f6",
+      "coverage": 0.815
+    },
+    {
+      "hex": "#bdefcf",
+      "coverage": 0.1323
+    },
+    {
+      "hex": "#0f1f1f",
+      "coverage": 0.0211
+    },
+    {
+      "hex": "#103425",
+      "coverage": 0.0197
+    },
+    {
+      "hex": "#c4dad0",
+      "coverage": 0.0119
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.025,
+      "strength": 0.2131
+    },
+    {
+      "y": 0.075,
+      "strength": 0.4193
+    },
+    {
+      "y": 0.1625,
+      "strength": 0.2561
+    },
+    {
+      "y": 0.2,
+      "strength": 0.4454
+    },
+    {
+      "y": 0.325,
+      "strength": 0.4445
+    },
+    {
+      "y": 0.3875,
+      "strength": 0.237
+    },
+    {
+      "y": 0.475,
+      "strength": 0.2562
+    },
+    {
+      "y": 0.6375,
+      "strength": 0.2085
+    },
+    {
+      "y": 0.9625,
+      "strength": 0.2817
+    }
+  ],
+  "regions": [
+    {
+      "id": "masthead",
+      "kind": "chrome",
+      "note": "Mint masthead with Yuzuctus wordmark, navigation, language and theme controls",
+      "grid": "A0:J0",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1586,
+        "h": 99
+      },
+      "aspect": 16.0202,
+      "palette": [
+        {
+          "hex": "#a8e8c8",
+          "coverage": 0.6734
+        },
+        {
+          "hex": "#f6f8f6",
+          "coverage": 0.3045
+        },
+        {
+          "hex": "#0c3626",
+          "coverage": 0.0113
+        },
+        {
+          "hex": "#62a484",
+          "coverage": 0.0058
+        },
+        {
+          "hex": "#082222",
+          "coverage": 0.0051
+        }
+      ],
+      "detail": {
+        "energy": 17.3803
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "page-heading",
+      "kind": "text",
+      "note": "Projects page title",
+      "grid": "A1:B1",
+      "coverBox": {
+        "x": 0,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.0265,
+        "y": 0.0998,
+        "w": 0.1734,
+        "h": 0.0726
+      },
+      "px": {
+        "x": 42,
+        "y": 99,
+        "w": 275,
+        "h": 72
+      },
+      "aspect": 3.8194,
+      "palette": [
+        {
+          "hex": "#f6f8f6",
+          "coverage": 0.8371
+        },
+        {
+          "hex": "#092d23",
+          "coverage": 0.0662
+        },
+        {
+          "hex": "#214640",
+          "coverage": 0.0413
+        },
+        {
+          "hex": "#8fa79e",
+          "coverage": 0.0319
+        },
+        {
+          "hex": "#52756c",
+          "coverage": 0.0235
+        }
+      ],
+      "detail": {
+        "energy": 43.5665
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 7,
+          "capHeightPx": 28.7,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.6449,
+          "advTall": 0.6623,
+          "advX": 0.6275,
+          "gap": 0.1046,
+          "xRatio": 0.744,
+          "stemW": 0.2342,
+          "contrast": 1.1431,
+          "serif": null,
+          "densTall": 0.5766,
+          "densX": 0.675,
+          "weight": 0.5766
+        },
+        "widthClass": "normal",
+        "weightClass": "bold",
+        "chosen": {
+          "family": "Commissioner",
+          "weight": 700,
+          "fontSizePx": 41,
+          "source": "catalog",
+          "estimatedSize": true,
+          "stamp": "c7876cd9f73a"
+        }
+      }
+    },
+    {
+      "id": "page-description",
+      "kind": "text",
+      "note": "One factual line describing the listed projects",
+      "grid": "A1:D1",
+      "coverBox": {
+        "x": 0,
+        "y": 0.1,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.0265,
+        "y": 0.0998,
+        "w": 0.3443,
+        "h": 0.0726
+      },
+      "px": {
+        "x": 42,
+        "y": 99,
+        "w": 546,
+        "h": 72
+      },
+      "aspect": 7.5833,
+      "palette": [
+        {
+          "hex": "#f7f8f7",
+          "coverage": 0.8878
+        },
+        {
+          "hex": "#092d23",
+          "coverage": 0.0333
+        },
+        {
+          "hex": "#214741",
+          "coverage": 0.0296
+        },
+        {
+          "hex": "#8fa79e",
+          "coverage": 0.0254
+        },
+        {
+          "hex": "#4f716a",
+          "coverage": 0.0239
+        }
+      ],
+      "detail": {
+        "energy": 40.1069
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "osurea-mark",
+      "kind": "plate",
+      "note": "Illustrated Osurea mark in the featured project row",
+      "grid": "A2:A3",
+      "box": {
+        "x": 0,
+        "y": 0.2,
+        "w": 0.1,
+        "h": 0.2
+      },
+      "px": {
+        "x": 0,
+        "y": 198,
+        "w": 159,
+        "h": 198
+      },
+      "aspect": 0.803,
+      "palette": [
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.633
+        },
+        {
+          "hex": "#193929",
+          "coverage": 0.1829
+        },
+        {
+          "hex": "#182828",
+          "coverage": 0.1115
+        },
+        {
+          "hex": "#5ecb9d",
+          "coverage": 0.0543
+        },
+        {
+          "hex": "#bdf6d7",
+          "coverage": 0.0183
+        }
+      ],
+      "detail": {
+        "energy": 8.5797
+      },
+      "medium": "raster",
+      "clipped": [
+        "right"
+      ],
+      "plate": "assets/plates/osurea-mark.png",
+      "text": null
+    },
+    {
+      "id": "osurea-title-and-description",
+      "kind": "text",
+      "note": "Osurea project title and factual product description",
+      "grid": "B2:E2",
+      "coverBox": {
+        "x": 0.1,
+        "y": 0.2,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.1154,
+        "y": 0.1996,
+        "w": 0.2989,
+        "h": 0.0968
+      },
+      "px": {
+        "x": 183,
+        "y": 198,
+        "w": 474,
+        "h": 96
+      },
+      "aspect": 4.9375,
+      "palette": [
+        {
+          "hex": "#f6f7f6",
+          "coverage": 0.9144
+        },
+        {
+          "hex": "#768582",
+          "coverage": 0.036
+        },
+        {
+          "hex": "#b3bfb9",
+          "coverage": 0.0326
+        },
+        {
+          "hex": "#093222",
+          "coverage": 0.0094
+        },
+        {
+          "hex": "#0a2626",
+          "coverage": 0.0076
+        }
+      ],
+      "detail": {
+        "energy": 27.9651
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "osurea-preview",
+      "kind": "plate",
+      "note": "Real Osurea product screenshot, shown without a border",
+      "grid": "E2:G3",
+      "box": {
+        "x": 0.4,
+        "y": 0.2,
+        "w": 0.3,
+        "h": 0.2
+      },
+      "px": {
+        "x": 634,
+        "y": 198,
+        "w": 476,
+        "h": 198
+      },
+      "aspect": 2.404,
+      "palette": [
+        {
+          "hex": "#f8f8f7",
+          "coverage": 0.6842
+        },
+        {
+          "hex": "#112721",
+          "coverage": 0.2633
+        },
+        {
+          "hex": "#245640",
+          "coverage": 0.0438
+        },
+        {
+          "hex": "#348464",
+          "coverage": 0.0045
+        },
+        {
+          "hex": "#405454",
+          "coverage": 0.0043
+        }
+      ],
+      "detail": {
+        "energy": 14.4277
+      },
+      "medium": "raster",
+      "plate": "assets/plates/osurea-preview.png",
+      "text": null
+    },
+    {
+      "id": "osurea-link",
+      "kind": "control",
+      "note": "Open the Osurea project",
+      "grid": "G2:H2",
+      "coverBox": {
+        "x": 0.6,
+        "y": 0.2,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.744,
+        "y": 0.1996,
+        "w": 0.0561,
+        "h": 0.0998
+      },
+      "px": {
+        "x": 1180,
+        "y": 198,
+        "w": 89,
+        "h": 99
+      },
+      "aspect": 0.899,
+      "palette": [
+        {
+          "hex": "#f6f0eb",
+          "coverage": 0.479
+        },
+        {
+          "hex": "#6dc3c0",
+          "coverage": 0.1553
+        },
+        {
+          "hex": "#eeeecf",
+          "coverage": 0.1466
+        },
+        {
+          "hex": "#0c0c0c",
+          "coverage": 0.1132
+        },
+        {
+          "hex": "#c5f1d7",
+          "coverage": 0.106
+        }
+      ],
+      "detail": {
+        "energy": 17.3397
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "zestecho-mark",
+      "kind": "plate",
+      "note": "Small illustration beside the ZestEcho entry",
+      "grid": "A4:A4",
+      "box": {
+        "x": 0,
+        "y": 0.4,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 397,
+        "w": 159,
+        "h": 99
+      },
+      "aspect": 1.6061,
+      "palette": [
+        {
+          "hex": "#f8f8f7",
+          "coverage": 0.8119
+        },
+        {
+          "hex": "#b9f4d6",
+          "coverage": 0.0641
+        },
+        {
+          "hex": "#86d8aa",
+          "coverage": 0.0606
+        },
+        {
+          "hex": "#2c5847",
+          "coverage": 0.0482
+        },
+        {
+          "hex": "#468062",
+          "coverage": 0.0153
+        }
+      ],
+      "detail": {
+        "energy": 8.4907
+      },
+      "medium": "raster",
+      "plate": "assets/plates/zestecho-mark.png",
+      "text": null
+    },
+    {
+      "id": "zestecho-copy",
+      "kind": "text",
+      "note": "ZestEcho title and concise description",
+      "grid": "B4:E4",
+      "coverBox": {
+        "x": 0.1,
+        "y": 0.4,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.1154,
+        "y": 0.4002,
+        "w": 0.3064,
+        "h": 0.0726
+      },
+      "px": {
+        "x": 183,
+        "y": 397,
+        "w": 486,
+        "h": 72
+      },
+      "aspect": 6.75,
+      "palette": [
+        {
+          "hex": "#f6f7f6",
+          "coverage": 0.8807
+        },
+        {
+          "hex": "#6e7f7d",
+          "coverage": 0.0588
+        },
+        {
+          "hex": "#afbeb7",
+          "coverage": 0.0544
+        },
+        {
+          "hex": "#48605e",
+          "coverage": 0.0044
+        },
+        {
+          "hex": "#5a6373",
+          "coverage": 0.0018
+        }
+      ],
+      "detail": {
+        "energy": 25.7134
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "zestecho-link",
+      "kind": "control",
+      "note": "Open ZestEcho",
+      "grid": "G4:H4",
+      "coverBox": {
+        "x": 0.6,
+        "y": 0.4,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.7137,
+        "y": 0.4002,
+        "w": 0.0864,
+        "h": 0.0847
+      },
+      "px": {
+        "x": 1132,
+        "y": 397,
+        "w": 137,
+        "h": 84
+      },
+      "aspect": 1.631,
+      "palette": [
+        {
+          "hex": "#f4f5f2",
+          "coverage": 0.3974
+        },
+        {
+          "hex": "#f7e9b6",
+          "coverage": 0.2635
+        },
+        {
+          "hex": "#111413",
+          "coverage": 0.1371
+        },
+        {
+          "hex": "#7fb8b6",
+          "coverage": 0.1296
+        },
+        {
+          "hex": "#f6d0d5",
+          "coverage": 0.0724
+        }
+      ],
+      "detail": {
+        "energy": 36.8911
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "yuzest-mark",
+      "kind": "plate",
+      "note": "Small illustration beside the YuZest entry",
+      "grid": "A5:A5",
+      "box": {
+        "x": 0,
+        "y": 0.5,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 496,
+        "w": 159,
+        "h": 99
+      },
+      "aspect": 1.6061,
+      "palette": [
+        {
+          "hex": "#f8f8f7",
+          "coverage": 0.6654
+        },
+        {
+          "hex": "#f7e9ac",
+          "coverage": 0.189
+        },
+        {
+          "hex": "#0c3e33",
+          "coverage": 0.1021
+        },
+        {
+          "hex": "#5f8169",
+          "coverage": 0.0287
+        },
+        {
+          "hex": "#b5ca65",
+          "coverage": 0.0147
+        }
+      ],
+      "detail": {
+        "energy": 18.2982
+      },
+      "medium": "raster",
+      "plate": "assets/plates/yuzest-mark.png",
+      "text": null
+    },
+    {
+      "id": "yuzest-copy",
+      "kind": "text",
+      "note": "YuZest title and concise description",
+      "grid": "B5:E5",
+      "coverBox": {
+        "x": 0.1,
+        "y": 0.5,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.1154,
+        "y": 0.5,
+        "w": 0.3064,
+        "h": 0.0968
+      },
+      "px": {
+        "x": 183,
+        "y": 496,
+        "w": 486,
+        "h": 96
+      },
+      "aspect": 5.0625,
+      "palette": [
+        {
+          "hex": "#f7f8f6",
+          "coverage": 0.9205
+        },
+        {
+          "hex": "#9aaaa3",
+          "coverage": 0.0397
+        },
+        {
+          "hex": "#677b79",
+          "coverage": 0.0242
+        },
+        {
+          "hex": "#082525",
+          "coverage": 0.0086
+        },
+        {
+          "hex": "#c1cfc8",
+          "coverage": 0.007
+        }
+      ],
+      "detail": {
+        "energy": 22.1946
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "yuzest-link",
+      "kind": "control",
+      "note": "Open YuZest",
+      "grid": "G5:H5",
+      "coverBox": {
+        "x": 0.6,
+        "y": 0.5,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.604,
+        "y": 0.5302,
+        "w": 0.087,
+        "h": 0.0363
+      },
+      "px": {
+        "x": 958,
+        "y": 526,
+        "w": 138,
+        "h": 36
+      },
+      "aspect": 3.8333,
+      "palette": [
+        {
+          "hex": "#f6f8f6",
+          "coverage": 0.8685
+        },
+        {
+          "hex": "#386355",
+          "coverage": 0.0444
+        },
+        {
+          "hex": "#809f92",
+          "coverage": 0.0389
+        },
+        {
+          "hex": "#bcd5c8",
+          "coverage": 0.0278
+        },
+        {
+          "hex": "#092e24",
+          "coverage": 0.0204
+        }
+      ],
+      "detail": {
+        "energy": 24.1171
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "skins-mark",
+      "kind": "plate",
+      "note": "Small illustration beside the osu! Yuzu Skins entry",
+      "grid": "A6:A6",
+      "box": {
+        "x": 0,
+        "y": 0.6,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 595,
+        "w": 159,
+        "h": 99
+      },
+      "aspect": 1.6061,
+      "palette": [
+        {
+          "hex": "#f8f8f7",
+          "coverage": 0.6913
+        },
+        {
+          "hex": "#f87fb2",
+          "coverage": 0.2516
+        },
+        {
+          "hex": "#f8cad8",
+          "coverage": 0.0297
+        },
+        {
+          "hex": "#f7a2c3",
+          "coverage": 0.0274
+        }
+      ],
+      "detail": {
+        "energy": 8.6339
+      },
+      "medium": "raster",
+      "plate": "assets/plates/skins-mark.png",
+      "text": null
+    },
+    {
+      "id": "skins-copy",
+      "kind": "text",
+      "note": "osu! Yuzu Skins title and concise description",
+      "grid": "B6:E6",
+      "coverBox": {
+        "x": 0.1,
+        "y": 0.6,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.1154,
+        "y": 0.624,
+        "w": 0.3102,
+        "h": 0.0756
+      },
+      "px": {
+        "x": 183,
+        "y": 619,
+        "w": 492,
+        "h": 75
+      },
+      "aspect": 6.56,
+      "palette": [
+        {
+          "hex": "#f6f7f5",
+          "coverage": 0.8997
+        },
+        {
+          "hex": "#aec1b9",
+          "coverage": 0.0356
+        },
+        {
+          "hex": "#68807b",
+          "coverage": 0.0282
+        },
+        {
+          "hex": "#0e3626",
+          "coverage": 0.0208
+        },
+        {
+          "hex": "#092929",
+          "coverage": 0.0158
+        }
+      ],
+      "detail": {
+        "energy": 37.019
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "skins-link",
+      "kind": "control",
+      "note": "Open the skin collection",
+      "grid": "G6:H6",
+      "coverBox": {
+        "x": 0.6,
+        "y": 0.6,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.604,
+        "y": 0.6542,
+        "w": 0.087,
+        "h": 0.0302
+      },
+      "px": {
+        "x": 958,
+        "y": 649,
+        "w": 138,
+        "h": 30
+      },
+      "aspect": 4.6,
+      "palette": [
+        {
+          "hex": "#f5f8f5",
+          "coverage": 0.853
+        },
+        {
+          "hex": "#7c9c90",
+          "coverage": 0.0601
+        },
+        {
+          "hex": "#3d6154",
+          "coverage": 0.0379
+        },
+        {
+          "hex": "#c1ded1",
+          "coverage": 0.0245
+        },
+        {
+          "hex": "#113929",
+          "coverage": 0.0245
+        }
+      ],
+      "detail": {
+        "energy": 29.4059
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "yuzucord-mark",
+      "kind": "plate",
+      "note": "Small illustration beside the YuzuCord entry",
+      "grid": "A7:A7",
+      "box": {
+        "x": 0,
+        "y": 0.7,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 694,
+        "w": 159,
+        "h": 99
+      },
+      "aspect": 1.6061,
+      "palette": [
+        {
+          "hex": "#f7f8f7",
+          "coverage": 0.7874
+        },
+        {
+          "hex": "#7987f8",
+          "coverage": 0.1578
+        },
+        {
+          "hex": "#f885b5",
+          "coverage": 0.0253
+        },
+        {
+          "hex": "#f8c4d5",
+          "coverage": 0.0173
+        },
+        {
+          "hex": "#a3aff1",
+          "coverage": 0.0121
+        }
+      ],
+      "detail": {
+        "energy": 4.8275
+      },
+      "medium": "raster",
+      "clipped": [
+        "bottom"
+      ],
+      "plate": "assets/plates/yuzucord-mark.png",
+      "text": null
+    },
+    {
+      "id": "yuzucord-copy",
+      "kind": "text",
+      "note": "YuzuCord title and concise description",
+      "grid": "B7:E7",
+      "coverBox": {
+        "x": 0.1,
+        "y": 0.7,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.1154,
+        "y": 0.748,
+        "w": 0.314,
+        "h": 0.0514
+      },
+      "px": {
+        "x": 183,
+        "y": 742,
+        "w": 498,
+        "h": 51
+      },
+      "aspect": 9.7647,
+      "palette": [
+        {
+          "hex": "#f7f8f7",
+          "coverage": 0.9098
+        },
+        {
+          "hex": "#a8bdb4",
+          "coverage": 0.0272
+        },
+        {
+          "hex": "#6c847f",
+          "coverage": 0.0258
+        },
+        {
+          "hex": "#0e3828",
+          "coverage": 0.0208
+        },
+        {
+          "hex": "#092a2a",
+          "coverage": 0.0165
+        }
+      ],
+      "detail": {
+        "energy": 31.207
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "yuzucord-link",
+      "kind": "control",
+      "note": "Open the YuzuCord repository",
+      "grid": "G7:H7",
+      "coverBox": {
+        "x": 0.6,
+        "y": 0.7,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.604,
+        "y": 0.7722,
+        "w": 0.087,
+        "h": 0.0272
+      },
+      "px": {
+        "x": 958,
+        "y": 766,
+        "w": 138,
+        "h": 27
+      },
+      "aspect": 5.1111,
+      "palette": [
+        {
+          "hex": "#f5f7f4",
+          "coverage": 0.7887
+        },
+        {
+          "hex": "#90aea1",
+          "coverage": 0.1032
+        },
+        {
+          "hex": "#c5ded0",
+          "coverage": 0.0467
+        },
+        {
+          "hex": "#184434",
+          "coverage": 0.0319
+        },
+        {
+          "hex": "#517568",
+          "coverage": 0.0295
+        }
+      ],
+      "detail": {
+        "energy": 33.1515
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "nectar-mark",
+      "kind": "plate",
+      "note": "Small illustration beside the Nectar Render entry",
+      "grid": "A8:A8",
+      "box": {
+        "x": 0,
+        "y": 0.8,
+        "w": 0.1,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 794,
+        "w": 159,
+        "h": 99
+      },
+      "aspect": 1.6061,
+      "palette": [
+        {
+          "hex": "#f8f8f7",
+          "coverage": 0.8702
+        },
+        {
+          "hex": "#7885f7",
+          "coverage": 0.0442
+        },
+        {
+          "hex": "#093727",
+          "coverage": 0.0383
+        },
+        {
+          "hex": "#092e2e",
+          "coverage": 0.0242
+        },
+        {
+          "hex": "#f8d87a",
+          "coverage": 0.023
+        }
+      ],
+      "detail": {
+        "energy": 8.936
+      },
+      "medium": "raster",
+      "clipped": [
+        "top"
+      ],
+      "plate": "assets/plates/nectar-mark.png",
+      "text": null
+    },
+    {
+      "id": "nectar-copy",
+      "kind": "text",
+      "note": "Project name and concise description of the Markdown converter",
+      "grid": "B8:E8",
+      "coverBox": {
+        "x": 0.1,
+        "y": 0.8,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.1154,
+        "y": 0.8609,
+        "w": 0.1248,
+        "h": 0.0363
+      },
+      "px": {
+        "x": 183,
+        "y": 854,
+        "w": 198,
+        "h": 36
+      },
+      "aspect": 5.5,
+      "palette": [
+        {
+          "hex": "#f5f8f4",
+          "coverage": 0.7416
+        },
+        {
+          "hex": "#0b3a2a",
+          "coverage": 0.0987
+        },
+        {
+          "hex": "#0a2e2e",
+          "coverage": 0.0675
+        },
+        {
+          "hex": "#3d6256",
+          "coverage": 0.0468
+        },
+        {
+          "hex": "#7a9b8f",
+          "coverage": 0.0455
+        }
+      ],
+      "detail": {
+        "energy": 44.6253
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "nectar-link",
+      "kind": "control",
+      "note": "Open the Markdown converter repository",
+      "grid": "G8:H8",
+      "coverBox": {
+        "x": 0.6,
+        "y": 0.8,
+        "w": 0.2,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.7289,
+        "y": 0.8004,
+        "w": 0.0681,
+        "h": 0.0998
+      },
+      "px": {
+        "x": 1156,
+        "y": 794,
+        "w": 108,
+        "h": 99
+      },
+      "aspect": 1.0909,
+      "palette": [
+        {
+          "hex": "#f4f7f3",
+          "coverage": 0.8483
+        },
+        {
+          "hex": "#527167",
+          "coverage": 0.0426
+        },
+        {
+          "hex": "#0b3828",
+          "coverage": 0.0408
+        },
+        {
+          "hex": "#b4c7c0",
+          "coverage": 0.0382
+        },
+        {
+          "hex": "#829995",
+          "coverage": 0.0302
+        }
+      ],
+      "detail": {
+        "energy": 19.3975
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "owner-illustration",
+      "kind": "plate",
+      "note": "Original Yuzu character illustration credited to its artist",
+      "grid": "I1:J4",
+      "box": {
+        "x": 0.8,
+        "y": 0.1,
+        "w": 0.2,
+        "h": 0.4
+      },
+      "px": {
+        "x": 1269,
+        "y": 99,
+        "w": 317,
+        "h": 397
+      },
+      "aspect": 0.7985,
+      "palette": [
+        {
+          "hex": "#f6f5f1",
+          "coverage": 0.6204
+        },
+        {
+          "hex": "#cdf7d8",
+          "coverage": 0.1423
+        },
+        {
+          "hex": "#f4e0c3",
+          "coverage": 0.1194
+        },
+        {
+          "hex": "#7dbaba",
+          "coverage": 0.0748
+        },
+        {
+          "hex": "#121413",
+          "coverage": 0.0431
+        }
+      ],
+      "detail": {
+        "energy": 38.7056
+      },
+      "medium": "raster",
+      "plate": "assets/plates/owner-illustration.png",
+      "text": null
+    },
+    {
+      "id": "music-summary",
+      "kind": "text",
+      "note": "Yuzuctus.fm status and concise factual description",
+      "grid": "H5:J6",
+      "coverBox": {
+        "x": 0.7,
+        "y": 0.5,
+        "w": 0.3,
+        "h": 0.2
+      },
+      "box": {
+        "x": 0.802,
+        "y": 0.6028,
+        "w": 0.1211,
+        "h": 0.0544
+      },
+      "px": {
+        "x": 1272,
+        "y": 598,
+        "w": 192,
+        "h": 54
+      },
+      "aspect": 3.5556,
+      "palette": [
+        {
+          "hex": "#e3f7e2",
+          "coverage": 0.8351
+        },
+        {
+          "hex": "#295646",
+          "coverage": 0.0625
+        },
+        {
+          "hex": "#9cbdaa",
+          "coverage": 0.0573
+        },
+        {
+          "hex": "#638777",
+          "coverage": 0.0382
+        },
+        {
+          "hex": "#183c3a",
+          "coverage": 0.0069
+        }
+      ],
+      "detail": {
+        "energy": 32.0345
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "music-list",
+      "kind": "text",
+      "note": "Five selected albums, artists, and titles",
+      "grid": "H5:J6",
+      "coverBox": {
+        "x": 0.7,
+        "y": 0.5,
+        "w": 0.3,
+        "h": 0.2
+      },
+      "box": {
+        "x": 0.802,
+        "y": 0.6028,
+        "w": 0.1211,
+        "h": 0.0544
+      },
+      "px": {
+        "x": 1272,
+        "y": 598,
+        "w": 192,
+        "h": 54
+      },
+      "aspect": 3.5556,
+      "palette": [
+        {
+          "hex": "#e3f7e2",
+          "coverage": 0.8351
+        },
+        {
+          "hex": "#295646",
+          "coverage": 0.0625
+        },
+        {
+          "hex": "#9cbdaa",
+          "coverage": 0.0573
+        },
+        {
+          "hex": "#638777",
+          "coverage": 0.0382
+        },
+        {
+          "hex": "#183c3a",
+          "coverage": 0.0069
+        }
+      ],
+      "detail": {
+        "energy": 32.0345
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "profiles-heading",
+      "kind": "text",
+      "note": "Profiles heading",
+      "grid": "H7:J7",
+      "coverBox": {
+        "x": 0.7,
+        "y": 0.7,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.7264,
+        "y": 0.7117,
+        "w": 0.087,
+        "h": 0.0877
+      },
+      "px": {
+        "x": 1152,
+        "y": 706,
+        "w": 138,
+        "h": 87
+      },
+      "aspect": 1.5862,
+      "palette": [
+        {
+          "hex": "#f5f7f4",
+          "coverage": 0.876
+        },
+        {
+          "hex": "#093424",
+          "coverage": 0.036
+        },
+        {
+          "hex": "#0b2a2a",
+          "coverage": 0.0329
+        },
+        {
+          "hex": "#43635b",
+          "coverage": 0.0314
+        },
+        {
+          "hex": "#809a91",
+          "coverage": 0.0237
+        }
+      ],
+      "detail": {
+        "energy": 21.1937
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "profile-entries",
+      "kind": "text",
+      "note": "Distinct Social & Code and Games profile links",
+      "grid": "H7:J9",
+      "coverBox": {
+        "x": 0.7,
+        "y": 0.7,
+        "w": 0.3,
+        "h": 0.3
+      },
+      "box": {
+        "x": 0.727,
+        "y": 0.7147,
+        "w": 0.0914,
+        "h": 0.2308
+      },
+      "px": {
+        "x": 1153,
+        "y": 709,
+        "w": 145,
+        "h": 229
+      },
+      "aspect": 0.6332,
+      "palette": [
+        {
+          "hex": "#f5f7f4",
+          "coverage": 0.8774
+        },
+        {
+          "hex": "#45645f",
+          "coverage": 0.038
+        },
+        {
+          "hex": "#0c3727",
+          "coverage": 0.0304
+        },
+        {
+          "hex": "#809991",
+          "coverage": 0.0285
+        },
+        {
+          "hex": "#0b2929",
+          "coverage": 0.0255
+        }
+      ],
+      "detail": {
+        "energy": 20.3609
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "footer",
+      "kind": "chrome",
+      "note": "Quiet dark footer with artist credits and return link",
+      "grid": "A9:J9",
+      "box": {
+        "x": 0,
+        "y": 0.9,
+        "w": 1,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 893,
+        "w": 1586,
+        "h": 99
+      },
+      "aspect": 16.0202,
+      "palette": [
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.5934
+        },
+        {
+          "hex": "#d7f8da",
+          "coverage": 0.3778
+        },
+        {
+          "hex": "#b3cabd",
+          "coverage": 0.0112
+        },
+        {
+          "hex": "#6c897d",
+          "coverage": 0.009
+        },
+        {
+          "hex": "#f8d878",
+          "coverage": 0.0086
+        }
+      ],
+      "detail": {
+        "energy": 14.2244
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    }
+  ]
+}

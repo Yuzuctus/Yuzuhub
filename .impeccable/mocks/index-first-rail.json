@@ -1,0 +1,10 @@
+{
+  "prompt": "Desktop first-viewport composition for Yuzuhub, a personal directory that helps visitors understand and open the real projects. At 1440x900: minimal 64px navigation and the project directory begins immediately. Use a wide left project list with Osurea featured in a compact 16:10 uncased interface thumbnail and five short factual project entries; a narrow right rail holds a modest original Yuzu illustration, a concise factual Yuzuctus.fm module, and two unmistakably separate profile groups for Social & Code and Games. Use Yuzuctus mint #A6E9D1, warm near-white, deep ink and Nunito. Keep all copy professional and useful. The OC image must be small and secondary to the project list. No oversized screenshot, no picture border or black mat, no repeated avatars, no oversized hero, no slogans, no invented claims, no gradients, no tag/search/filter UI.",
+  "promptCapture": "Reconstructed from the generation brief after the tool call; exact original prompt was not retained.",
+  "approved": true,
+  "sourceAssets": [
+    "img/Characters/yuzuv2alt-web_kourihase.png",
+    "img/osurea-preview.png"
+  ],
+  "generatedAssetUse": "Composition reference only; not shipped artwork."
+}

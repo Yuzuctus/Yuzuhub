@@ -1,0 +1,310 @@
+- generic [active] [ref=f2e1]:
+  - navigation "Main navigation" [ref=f2e2]:
+    - link "Yuzuc tus" [ref=f2e3] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=f2e4]: Yuzuc
+      - generic [ref=f2e5]: tus
+    - generic [ref=f2e6]:
+      - link "Featured" [ref=f2e7] [cursor=pointer]:
+        - /url: "#projet"
+      - link "Socials" [ref=f2e8] [cursor=pointer]:
+        - /url: "#reseaux"
+      - link "Gaming" [ref=f2e9] [cursor=pointer]:
+        - /url: "#jeux"
+      - link "Projects" [ref=f2e10] [cursor=pointer]:
+        - /url: "#projets"
+      - link "Music" [ref=f2e11] [cursor=pointer]:
+        - /url: "#music"
+    - generic [ref=f2e12]:
+      - group "Language selector" [ref=f2e13]:
+        - button "EN" [disabled] [pressed] [ref=f2e14]
+        - button "FR" [ref=f2e15] [cursor=pointer]
+      - button "Switch to night mode" [ref=f2e16] [cursor=pointer]
+  - main [ref=f2e19]:
+    - generic [ref=f2e20]:
+      - generic [ref=f2e21]:
+        - generic [ref=f2e22]: Yuzuhub
+        - heading [level=1] [ref=f2e23]:
+          - text: Yuzu
+          - emphasis [ref=f2e24]: ctus
+        - paragraph [ref=f2e25]: "I build practical web tools with personality: sharp, playful, and clean."
+        - paragraph [ref=f2e26]: This is my home base for projects, profiles, and experiments shipped in public.
+        - generic [ref=f2e27]:
+          - link "See featured project" [ref=f2e28] [cursor=pointer]:
+            - /url: "#projet"
+          - link "Find me online" [ref=f2e29] [cursor=pointer]:
+            - /url: "#reseaux"
+      - img "Official Yuzuctus avatar" [ref=f2e31]
+    - generic [ref=f2e33]:
+      - generic [ref=f2e34]:
+        - generic [ref=f2e35]: Featured project
+        - heading "Osurea.yuzuctus.fr" [level=2] [ref=f2e36]
+        - paragraph [ref=f2e37]: My flagship project for comparing tablet area setups, visualizing differences, and sharing settings quickly.
+      - article [ref=f2e38]:
+        - generic [ref=f2e39]:
+          - paragraph [ref=f2e40]: Osurea.yuzuctus.fr
+          - heading "Osurea" [level=3] [ref=f2e41]
+          - paragraph [ref=f2e42]: A focused app to compare tablet area setups, spot differences fast, and share exact values.
+          - generic [ref=f2e43]:
+            - link "Open app" [ref=f2e44] [cursor=pointer]:
+              - /url: https://osurea.yuzuctus.fr
+            - link "GitHub" [ref=f2e48] [cursor=pointer]:
+              - /url: https://github.com/Yuzuctus/Osurea
+        - link "View Osurea preview" [ref=f2e51] [cursor=pointer]:
+          - /url: https://osurea.yuzuctus.fr
+          - img "Preview of the Osurea interface" [ref=f2e52]
+    - generic [ref=f2e54]:
+      - generic [ref=f2e55]:
+        - generic [ref=f2e56]: Social
+        - heading "Socials and channels" [level=2] [ref=f2e57]
+        - paragraph [ref=f2e58]: Follow my updates, videos, and latest builds.
+      - generic [ref=f2e59]:
+        - link "X @Yuzuctus" [ref=f2e60] [cursor=pointer]:
+          - /url: https://x.com/Yuzuctus
+          - generic [ref=f2e64]:
+            - generic [ref=f2e65]: X
+            - generic [ref=f2e66]: "@Yuzuctus"
+        - link "GitHub @Yuzuctus" [ref=f2e70] [cursor=pointer]:
+          - /url: https://github.com/Yuzuctus
+          - generic [ref=f2e74]:
+            - generic [ref=f2e75]: GitHub
+            - generic [ref=f2e76]: "@Yuzuctus"
+        - link "Reddit u/Turnip-Unique" [ref=f2e80] [cursor=pointer]:
+          - /url: https://www.reddit.com/user/Turnip-Unique/
+          - generic [ref=f2e84]:
+            - generic [ref=f2e85]: Reddit
+            - generic [ref=f2e86]: u/Turnip-Unique
+        - button "Copy Discord username" [ref=f2e90] [cursor=pointer]:
+          - generic [ref=f2e94]:
+            - generic [ref=f2e95]: Discord
+            - generic [ref=f2e96]: "@yuzuctus"
+        - link "Twitch yuzuctus" [ref=f2e100] [cursor=pointer]:
+          - /url: https://www.twitch.tv/yuzuctus
+          - generic [ref=f2e104]:
+            - generic [ref=f2e105]: Twitch
+            - generic [ref=f2e106]: yuzuctus
+        - link "YouTube @Yuzuctus" [ref=f2e110] [cursor=pointer]:
+          - /url: https://www.youtube.com/@Yuzuctus
+          - generic [ref=f2e114]:
+            - generic [ref=f2e115]: YouTube
+            - generic [ref=f2e116]: "@Yuzuctus"
+        - link "TikTok @yuzuctus" [ref=f2e120] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@yuzuctus
+          - generic [ref=f2e124]:
+            - generic [ref=f2e125]: TikTok
+            - generic [ref=f2e126]: "@yuzuctus"
+    - generic [ref=f2e131]:
+      - generic [ref=f2e132]:
+        - generic [ref=f2e133]: Gaming
+        - heading "Gaming profiles" [level=2] [ref=f2e134]
+        - paragraph [ref=f2e135]: Main game profiles and Riot tag in one place.
+      - generic [ref=f2e136]:
+        - link "osu! Yuzuctus" [ref=f2e137] [cursor=pointer]:
+          - /url: https://osu.ppy.sh/users/14062291
+          - generic [ref=f2e141]:
+            - generic [ref=f2e142]: osu!
+            - generic [ref=f2e143]: Yuzuctus
+        - link "Steam Yuzuctus" [ref=f2e147] [cursor=pointer]:
+          - /url: https://steamcommunity.com/id/Yuzuctus/
+          - generic [ref=f2e151]:
+            - generic [ref=f2e152]: Steam
+            - generic [ref=f2e153]: Yuzuctus
+        - button "Copy Riot Games username" [ref=f2e157] [cursor=pointer]:
+          - generic [ref=f2e161]:
+            - generic [ref=f2e162]: Riot Games
+            - generic [ref=f2e163]: Yuzuctus#OSU
+    - generic [ref=f2e168]:
+      - generic [ref=f2e169]:
+        - generic [ref=f2e170]: Other projects
+        - heading "Tools and side builds" [level=2] [ref=f2e171]
+      - generic [ref=f2e172]:
+        - article [ref=f2e173]:
+          - heading "Nectar Render" [level=3] [ref=f2e178]
+          - paragraph [ref=f2e179]: Convert Markdown to PDF or HTML with live preview, custom themes, and precise export control.
+          - generic [ref=f2e180]:
+            - button "Site coming soon" [disabled]:
+              - generic: Coming soon
+            - link "GitHub" [ref=f2e181] [cursor=pointer]:
+              - /url: https://github.com/Yuzuctus/Nectar-Render
+        - article [ref=f2e184]:
+          - heading "YuZest" [level=3] [ref=f2e189]
+          - paragraph [ref=f2e190]: My private short-link service for clean URLs and instant sharing.
+          - link "Open" [ref=f2e192] [cursor=pointer]:
+            - /url: https://zest.yuzuctus.fr/
+        - article [ref=f2e196]:
+          - heading "Yuzu osu! Skins" [level=3] [ref=f2e201]
+          - paragraph [ref=f2e202]: A curated osu! skin hub to browse, preview, and download my go-to picks.
+          - generic [ref=f2e203]:
+            - link "Open site" [ref=f2e204] [cursor=pointer]:
+              - /url: https://skins.yuzuctus.fr
+            - link "GitHub" [ref=f2e208] [cursor=pointer]:
+              - /url: https://github.com/Yuzuctus/OsuYuzu-Skins
+    - generic [ref=f2e212]:
+      - generic [ref=f2e213]:
+        - generic [ref=f2e214]: Favorite albums
+        - heading "Album gallery" [level=2] [ref=f2e215]
+        - paragraph [ref=f2e216]: A few records I replay all the time. Click a cover to open direct streaming links.
+      - list "Favorite album covers" [ref=f2e217]:
+        - listitem [ref=f2e218]:
+          - button "ekkolaptomenos by Haru Nemuri" [ref=f2e219] [cursor=pointer]:
+            - img "ekkolaptomenos cover" [ref=f2e220]
+            - generic [ref=f2e221]:
+              - generic [ref=f2e222]: ekkolaptomenos
+              - generic [ref=f2e223]: Haru Nemuri
+        - listitem [ref=f2e224]:
+          - button "8th Album \"Untitled\" by downy" [ref=f2e225] [cursor=pointer]:
+            - img "8th Album \"Untitled\" cover" [ref=f2e226]
+            - generic [ref=f2e227]:
+              - generic [ref=f2e228]: 8th Album "Untitled"
+              - generic [ref=f2e229]: downy
+        - listitem [ref=f2e230]:
+          - button "Ado's Utattemita Album by Ado" [ref=f2e231] [cursor=pointer]:
+            - img "Ado's Utattemita Album cover" [ref=f2e232]
+            - generic [ref=f2e233]:
+              - generic [ref=f2e234]: Ado's Utattemita Album
+              - generic [ref=f2e235]: Ado
+        - listitem [ref=f2e236]:
+          - button "C'est quand meme bizarre by jean" [ref=f2e237] [cursor=pointer]:
+            - img "C'est quand meme bizarre cover" [ref=f2e238]
+            - generic [ref=f2e239]:
+              - generic [ref=f2e240]: C'est quand meme bizarre
+              - generic [ref=f2e241]: jean
+        - listitem [ref=f2e242]:
+          - button "Dos Moons by Dos Monos" [ref=f2e243] [cursor=pointer]:
+            - img "Dos Moons cover" [ref=f2e244]
+            - generic [ref=f2e245]:
+              - generic [ref=f2e246]: Dos Moons
+              - generic [ref=f2e247]: Dos Monos
+        - listitem [ref=f2e248]:
+          - button "Enfant lune by Gringe" [ref=f2e249] [cursor=pointer]:
+            - img "Enfant lune cover" [ref=f2e250]
+            - generic [ref=f2e251]:
+              - generic [ref=f2e252]: Enfant lune
+              - generic [ref=f2e253]: Gringe
+        - listitem [ref=f2e254]:
+          - button "En premier l'amour by Susanoo" [ref=f2e255] [cursor=pointer]:
+            - img "En premier l'amour cover" [ref=f2e256]
+            - generic [ref=f2e257]:
+              - generic [ref=f2e258]: En premier l'amour
+              - generic [ref=f2e259]: Susanoo
+        - listitem [ref=f2e260]:
+          - button "Girlhood Memories by Phantom Siita" [ref=f2e261] [cursor=pointer]:
+            - img "Girlhood Memories cover" [ref=f2e262]
+            - generic [ref=f2e263]:
+              - generic [ref=f2e264]: Girlhood Memories
+              - generic [ref=f2e265]: Phantom Siita
+        - listitem [ref=f2e266]:
+          - button "Inferno (La jeune fille et la mort) by VII" [ref=f2e267] [cursor=pointer]:
+            - img "Inferno (La jeune fille et la mort) cover" [ref=f2e268]
+            - generic [ref=f2e269]:
+              - generic [ref=f2e270]: Inferno (La jeune fille et la mort)
+              - generic [ref=f2e271]: VII
+        - listitem [ref=f2e272]:
+          - button "Jeudi by Hugo TSR" [ref=f2e273] [cursor=pointer]:
+            - img "Jeudi cover" [ref=f2e274]
+            - generic [ref=f2e275]:
+              - generic [ref=f2e276]: Jeudi
+              - generic [ref=f2e277]: Hugo TSR
+        - listitem [ref=f2e278]:
+          - button "JUNGLE DES ILLUSIONS VOL 2 by Jungle Jack" [ref=f2e279] [cursor=pointer]:
+            - img "JUNGLE DES ILLUSIONS VOL 2 cover" [ref=f2e280]
+            - generic [ref=f2e281]:
+              - generic [ref=f2e282]: JUNGLE DES ILLUSIONS VOL 2
+              - generic [ref=f2e283]: Jungle Jack
+        - listitem [ref=f2e284]:
+          - button "LA FIEV by Mairo" [ref=f2e285] [cursor=pointer]:
+            - img "LA FIEV cover" [ref=f2e286]
+            - generic [ref=f2e287]:
+              - generic [ref=f2e288]: LA FIEV
+              - generic [ref=f2e289]: Mairo
+        - listitem [ref=f2e290]:
+          - button "Le chant des sirenes by Orelsan" [ref=f2e291] [cursor=pointer]:
+            - img "Le chant des sirenes cover" [ref=f2e292]
+            - generic [ref=f2e293]:
+              - generic [ref=f2e294]: Le chant des sirenes
+              - generic [ref=f2e295]: Orelsan
+        - listitem [ref=f2e296]:
+          - button "Les Amants Terribles by Tuerie" [ref=f2e297] [cursor=pointer]:
+            - img "Les Amants Terribles cover" [ref=f2e298]
+            - generic [ref=f2e299]:
+              - generic [ref=f2e300]: Les Amants Terribles
+              - generic [ref=f2e301]: Tuerie
+        - listitem [ref=f2e302]:
+          - button "Magnificat by VALD" [ref=f2e303] [cursor=pointer]:
+            - img "Magnificat cover" [ref=f2e304]
+            - generic [ref=f2e305]:
+              - generic [ref=f2e306]: Magnificat
+              - generic [ref=f2e307]: VALD
+        - listitem [ref=f2e308]:
+          - button "Negative Spaces by Poppy" [ref=f2e309] [cursor=pointer]:
+            - img "Negative Spaces cover" [ref=f2e310]
+            - generic [ref=f2e311]:
+              - generic [ref=f2e312]: Negative Spaces
+              - generic [ref=f2e313]: Poppy
+        - listitem [ref=f2e314]:
+          - button "Nirvana by Jazzy Bazz" [ref=f2e315] [cursor=pointer]:
+            - img "Nirvana cover" [ref=f2e316]
+            - generic [ref=f2e317]:
+              - generic [ref=f2e318]: Nirvana
+              - generic [ref=f2e319]: Jazzy Bazz
+        - listitem [ref=f2e320]:
+          - button "Ou les garcons grandissent by Jewel Usain" [ref=f2e321] [cursor=pointer]:
+            - img "Ou les garcons grandissent cover" [ref=f2e322]
+            - generic [ref=f2e323]:
+              - generic [ref=f2e324]: Ou les garcons grandissent
+              - generic [ref=f2e325]: Jewel Usain
+        - listitem [ref=f2e326]:
+          - button "Phoenix by Lord Esperanza" [ref=f2e327] [cursor=pointer]:
+            - img "Phoenix cover" [ref=f2e328]
+            - generic [ref=f2e329]:
+              - generic [ref=f2e330]: Phoenix
+              - generic [ref=f2e331]: Lord Esperanza
+        - listitem [ref=f2e332]:
+          - button "Pirouette by Model/Actriz" [ref=f2e333] [cursor=pointer]:
+            - img "Pirouette cover" [ref=f2e334]
+            - generic [ref=f2e335]:
+              - generic [ref=f2e336]: Pirouette
+              - generic [ref=f2e337]: Model/Actriz
+        - listitem [ref=f2e338]:
+          - button "Si on sombre ce sera beau by Solann" [ref=f2e339] [cursor=pointer]:
+            - img "Si on sombre ce sera beau cover" [ref=f2e340]
+            - generic [ref=f2e341]:
+              - generic [ref=f2e342]: Si on sombre ce sera beau
+              - generic [ref=f2e343]: Solann
+        - listitem [ref=f2e344]:
+          - button "Si t'essayais d'etre heureux ? by L'enfant" [ref=f2e345] [cursor=pointer]:
+            - img "Si t'essayais d'etre heureux ? cover" [ref=f2e346]
+            - generic [ref=f2e347]:
+              - generic [ref=f2e348]: Si t'essayais d'etre heureux ?
+              - generic [ref=f2e349]: L'enfant
+        - listitem [ref=f2e350]:
+          - button "SLMJVVMRL0 by C'typeencostume" [ref=f2e351] [cursor=pointer]:
+            - img "SLMJVVMRL0 cover" [ref=f2e352]
+            - generic [ref=f2e353]:
+              - generic [ref=f2e354]: SLMJVVMRL0
+              - generic [ref=f2e355]: C'typeencostume
+        - listitem [ref=f2e356]:
+          - button "The Human Fear by Franz Ferdinand" [ref=f2e357] [cursor=pointer]:
+            - img "The Human Fear cover" [ref=f2e358]
+            - generic [ref=f2e359]:
+              - generic [ref=f2e360]: The Human Fear
+              - generic [ref=f2e361]: Franz Ferdinand
+  - contentinfo [ref=f2e362]:
+    - generic [ref=f2e363]:
+      - link "Yuzuc tus" [ref=f2e364] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=f2e365]: Yuzuc
+        - generic [ref=f2e366]: tus
+      - navigation "Footer links" [ref=f2e367]:
+        - link "Back to top" [ref=f2e368] [cursor=pointer]:
+          - /url: "#top"
+        - link "GitHub" [ref=f2e369] [cursor=pointer]:
+          - /url: https://github.com/Yuzuctus
+      - paragraph [ref=f2e370]:
+        - text: Built by Yuzuctus. Character art by
+        - link "KouriHase" [ref=f2e371] [cursor=pointer]:
+          - /url: https://x.com/Kourihase
+        - text: and
+        - link "Joa" [ref=f2e372] [cursor=pointer]:
+          - /url: https://x.com/dreepies
+        - text: .

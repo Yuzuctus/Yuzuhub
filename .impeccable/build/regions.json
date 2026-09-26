@@ -1,0 +1,32 @@
+{
+  "regions": [
+    { "id": "masthead", "kind": "chrome", "grid": "A0:J0", "note": "Mint masthead with Yuzuctus wordmark, navigation, language and theme controls" },
+    { "id": "page-heading", "kind": "text", "grid": "A1:B1", "note": "Projects page title" },
+    { "id": "page-description", "kind": "text", "grid": "A1:D1", "note": "One factual line describing the listed projects" },
+    { "id": "osurea-mark", "kind": "plate", "grid": "A2:A3", "note": "Illustrated Osurea mark in the featured project row" },
+    { "id": "osurea-title-and-description", "kind": "text", "grid": "B2:E2", "note": "Osurea project title and factual product description" },
+    { "id": "osurea-preview", "kind": "plate", "grid": "E2:G3", "note": "Real Osurea product screenshot, shown without a border" },
+    { "id": "osurea-link", "kind": "control", "grid": "G2:H2", "note": "Open the Osurea project" },
+    { "id": "zestecho-mark", "kind": "plate", "grid": "A4:A4", "note": "Small illustration beside the ZestEcho entry" },
+    { "id": "zestecho-copy", "kind": "text", "grid": "B4:E4", "note": "ZestEcho title and concise description" },
+    { "id": "zestecho-link", "kind": "control", "grid": "G4:H4", "note": "Open ZestEcho" },
+    { "id": "yuzest-mark", "kind": "plate", "grid": "A5:A5", "note": "Small illustration beside the YuZest entry" },
+    { "id": "yuzest-copy", "kind": "text", "grid": "B5:E5", "note": "YuZest title and concise description" },
+    { "id": "yuzest-link", "kind": "control", "grid": "G5:H5", "note": "Open YuZest" },
+    { "id": "skins-mark", "kind": "plate", "grid": "A6:A6", "note": "Small illustration beside the osu! Yuzu Skins entry" },
+    { "id": "skins-copy", "kind": "text", "grid": "B6:E6", "note": "osu! Yuzu Skins title and concise description" },
+    { "id": "skins-link", "kind": "control", "grid": "G6:H6", "note": "Open the skin collection" },
+    { "id": "yuzucord-mark", "kind": "plate", "grid": "A7:A7", "note": "Small illustration beside the YuzuCord entry" },
+    { "id": "yuzucord-copy", "kind": "text", "grid": "B7:E7", "note": "YuzuCord title and concise description" },
+    { "id": "yuzucord-link", "kind": "control", "grid": "G7:H7", "note": "Open the YuzuCord repository" },
+    { "id": "nectar-mark", "kind": "plate", "grid": "A8:A8", "note": "Small illustration beside the Nectar Render entry" },
+    { "id": "nectar-copy", "kind": "text", "grid": "B8:E8", "note": "Project name and concise description of the Markdown converter" },
+    { "id": "nectar-link", "kind": "control", "grid": "G8:H8", "note": "Open the Markdown converter repository" },
+    { "id": "owner-illustration", "kind": "plate", "grid": "I1:J4", "note": "Original Yuzu character illustration credited to its artist" },
+    { "id": "music-summary", "kind": "text", "grid": "H5:J6", "note": "Yuzuctus.fm status and concise factual description" },
+    { "id": "music-list", "kind": "text", "grid": "H5:J6", "note": "Five selected albums, artists, and titles" },
+    { "id": "profiles-heading", "kind": "text", "grid": "H7:J7", "note": "Profiles heading" },
+    { "id": "profile-entries", "kind": "text", "grid": "H7:J9", "note": "Distinct Social & Code and Games profile links" },
+    { "id": "footer", "kind": "chrome", "grid": "A9:J9", "note": "Quiet dark footer with artist credits and return link" }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "prompt": "Desktop first-viewport composition for Yuzuhub, a personal directory that helps visitors understand and open the real projects. At 1440x900: compact 64px navigation, then an immediate project index with a restrained mint identity band, Nunito lettering, and a small credited Yuzu illustration; a concise Osurea row with factual copy and a modest 16:10 interface preview without a border or frame; five compact project directory entries; separate social/code and games groupings; a short factual Yuzuctus.fm section; a dark footer. Use the existing Yuzuctus mint #A6E9D1, warm near-white paper, deep ink, and original provided art. Professional neutral copy only. Keep the viewport dense and useful. No giant hero, no large chibi, no black picture frame, no repeated avatars, no gradients, no cards, no tags, search, or filters. Real content: Osurea, ZestEcho, YuZest, osu! Yuzu Skins, YuzuCord, Nectar Render, Yuzuctus.fm, Profiles.",
+  "promptCapture": "Reconstructed from the generation brief after the tool call; exact original prompt was not retained.",
+  "approved": false,
+  "sourceAssets": ["img/Characters/yuzuv2alt-web_kourihase.png", "img/osurea-preview.png"],
+  "generatedAssetUse": "Composition reference only; not shipped artwork."
+}

@@ -1,0 +1,306 @@
+- generic [ref=f1e2]:
+  - link "Aller à la collection" [ref=f1e3] [cursor=pointer]:
+    - /url: "#collection"
+  - banner [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - link "Osu!Yuzu — haut de page" [ref=f1e6] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=f1e10]: OSU!YUZU
+      - navigation "Navigation" [ref=f1e11]:
+        - link "Collection" [ref=f1e12] [cursor=pointer]:
+          - /url: "#collection"
+        - link "Me trouver" [ref=f1e16] [cursor=pointer]:
+          - /url: "#footer"
+        - link "yuzuctus.fr" [ref=f1e20] [cursor=pointer]:
+          - /url: https://yuzuctus.fr/
+      - button "Passer en thème clair" [pressed] [ref=f1e24] [cursor=pointer]: Clair
+  - main [ref=f1e25]:
+    - region [ref=f1e26]:
+      - generic [ref=f1e27]:
+        - generic [ref=f1e28]:
+          - paragraph [ref=f1e29]: Carnet personnel — osu!standard
+          - heading "MES SKINS OSU" [level=1] [ref=f1e30]: MESSKINSOSU
+          - paragraph [ref=f1e31]: Les skins que j’utilise vraiment quand je joue. Pioche dedans, c’est fait pour jouer.
+          - generic [ref=f1e32]:
+            - link "Voir la collection" [ref=f1e33] [cursor=pointer]:
+              - /url: "#collection"
+            - link "Tout prendre (.zip)" [ref=f1e36] [cursor=pointer]:
+              - /url: /api/download-all
+        - generic [ref=f1e37]:
+          - figure [ref=f1e38]:
+            - 'img "Chibi Yuzu — illustration : Kourihase" [ref=f1e40]'
+            - generic [ref=f1e41]:
+              - text: "Illustration :"
+              - link "Kourihase" [ref=f1e42] [cursor=pointer]:
+                - /url: https://x.com/Kourihase
+          - paragraph [ref=f1e43]: Yuzu — original character · artwork by Kourihase
+    - generic "Le carnet en chiffres" [ref=f1e44]:
+      - generic [ref=f1e45]:
+        - generic [ref=f1e46]:
+          - strong [ref=f1e47]: "22"
+          - text: skins
+        - generic [ref=f1e48]:
+          - strong [ref=f1e49]: "1"
+          - text: main
+        - generic [ref=f1e50]: osu!standard
+        - generic [ref=f1e51]: skins.yuzuctus.fr
+        - generic [ref=f1e52]: Ordre = ordre de préférence
+    - region [ref=f1e53]:
+      - generic [ref=f1e54]:
+        - img "Aperçu du skin ✦ The Sun, The Moon, The Star ✦ by Lighis" [ref=f1e57]
+        - generic [ref=f1e58]:
+          - paragraph [ref=f1e59]: 01 — Mon main
+          - heading "✦ The Sun, The Moon, The Star ✦ by Lighis" [level=2] [ref=f1e60]
+          - generic [ref=f1e61]:
+            - link "Télécharger" [ref=f1e62] [cursor=pointer]:
+              - /url: /api/download/a2e2d535-798a-403b-92e7-d987964a635d
+            - link "Forum" [ref=f1e65] [cursor=pointer]:
+              - /url: https://osu.ppy.sh/community/forums/topics/1890875?n=1
+    - region [ref=f1e66]:
+      - generic [ref=f1e67]:
+        - generic [ref=f1e68]:
+          - paragraph [ref=f1e69]: 02 — Collection
+          - heading "La collection" [level=2] [ref=f1e70]
+        - generic [ref=f1e71]:
+          - article [ref=f1e72]:
+            - generic [ref=f1e73]: "02"
+            - heading "Telta edit" [level=3] [ref=f1e74]
+            - img "Aperçu du skin Telta edit" [ref=f1e79]
+            - generic [aria-hidden] [ref=f1e81]: →
+            - link "Télécharger Telta edit" [ref=f1e82] [cursor=pointer]:
+              - /url: /api/download/465e34b6-5ad1-46b8-a617-7443b4e78d22
+          - article [ref=f1e83]:
+            - generic [ref=f1e84]: "03"
+            - 'heading "- #NaPiii''s 《NM》 v8 (NaPiii_)" [level=3] [ref=f1e85]'
+            - 'img "Aperçu du skin - #NaPiii''s 《NM》 v8 (NaPiii_)" [ref=f1e90]'
+            - generic [ref=f1e91]:
+              - link "Forum" [ref=f1e92] [cursor=pointer]:
+                - /url: https://skins.osuck.net/skins/4849
+              - generic [aria-hidden] [ref=f1e93]: →
+            - 'link "Télécharger - #NaPiii''s 《NM》 v8 (NaPiii_)" [ref=f1e94] [cursor=pointer]':
+              - /url: /api/download/5a765df9-cd8d-493a-8aab-fa0e7c8fc55d
+          - article [ref=f1e95]:
+            - generic [ref=f1e96]: "04"
+            - heading "FREEDOM DiVE REiMAGINED" [level=3] [ref=f1e97]
+            - img "Aperçu du skin FREEDOM DiVE REiMAGINED" [ref=f1e102]
+            - generic [ref=f1e103]:
+              - link "Forum" [ref=f1e104] [cursor=pointer]:
+                - /url: https://osu.ppy.sh/community/forums/topics/2019099?n=1
+              - generic [aria-hidden] [ref=f1e105]: →
+            - link "Télécharger FREEDOM DiVE REiMAGINED" [ref=f1e106] [cursor=pointer]:
+              - /url: /api/download/c402456e-a8b3-4629-a807-7a42f42bea2c
+          - article [ref=f1e107]:
+            - generic [ref=f1e108]: "05"
+            - heading "spilicia - DT1_ultra_lite" [level=3] [ref=f1e109]
+            - img "Aperçu du skin spilicia - DT1_ultra_lite" [ref=f1e114]
+            - generic [aria-hidden] [ref=f1e116]: →
+            - link "Télécharger spilicia - DT1_ultra_lite" [ref=f1e117] [cursor=pointer]:
+              - /url: /api/download/f66e1d8a-8973-4c1b-a1a3-88f3efde3f96
+          - article [ref=f1e118]:
+            - generic [ref=f1e119]: "06"
+            - heading "Xaver minimal (Xaver mix of various skins)" [level=3] [ref=f1e120]
+            - img "Aperçu du skin Xaver minimal (Xaver mix of various skins)" [ref=f1e125]
+            - generic [ref=f1e126]:
+              - link "Forum" [ref=f1e127] [cursor=pointer]:
+                - /url: https://skins.osuck.net/skins/4120
+              - generic [aria-hidden] [ref=f1e128]: →
+            - link "Télécharger Xaver minimal (Xaver mix of various skins)" [ref=f1e129] [cursor=pointer]:
+              - /url: /api/download/cb5aab42-c9b5-4467-a1cb-f3a12297d7e6
+          - article [ref=f1e130]:
+            - generic [ref=f1e131]: "07"
+            - heading "tekkito_vskf (draingang remake) - Miss sound edit" [level=3] [ref=f1e132]
+            - img "Aperçu du skin tekkito_vskf (draingang remake) - Miss sound edit" [ref=f1e137]
+            - generic [ref=f1e138]:
+              - link "Forum" [ref=f1e139] [cursor=pointer]:
+                - /url: https://skins.osuck.net/skins/4091
+              - generic [aria-hidden] [ref=f1e140]: →
+            - link "Télécharger tekkito_vskf (draingang remake) - Miss sound edit" [ref=f1e141] [cursor=pointer]:
+              - /url: /api/download/2a74e717-677c-48bb-8b8f-a53617bd5057
+          - article [ref=f1e142]:
+            - generic [ref=f1e143]: "08"
+            - heading "Frieren DT" [level=3] [ref=f1e144]
+            - img "Aperçu du skin Frieren DT" [ref=f1e149]
+            - generic [ref=f1e150]:
+              - link "Forum" [ref=f1e151] [cursor=pointer]:
+                - /url: https://skins.osuck.net/skins/3577
+              - generic [aria-hidden] [ref=f1e152]: →
+            - link "Télécharger Frieren DT" [ref=f1e153] [cursor=pointer]:
+              - /url: /api/download/89bb827b-6af8-4f83-9d81-8e4e37b739d7
+          - article [ref=f1e154]:
+            - generic [ref=f1e155]: "09"
+            - heading "Kori's pick (-Kori)" [level=3] [ref=f1e156]
+            - img "Aperçu du skin Kori's pick (-Kori)" [ref=f1e161]
+            - generic [ref=f1e162]:
+              - link "Forum" [ref=f1e163] [cursor=pointer]:
+                - /url: https://osu.ppy.sh/community/forums/topics/1718598?n=1
+              - generic [aria-hidden] [ref=f1e164]: →
+            - link "Télécharger Kori's pick (-Kori)" [ref=f1e165] [cursor=pointer]:
+              - /url: /api/download/c61bff24-f75d-4a79-b0a6-bf206f16c064
+          - article [ref=f1e166]:
+            - generic [ref=f1e167]: "10"
+            - heading "Frieren NM" [level=3] [ref=f1e168]
+            - img "Aperçu du skin Frieren NM" [ref=f1e173]
+            - generic [ref=f1e174]:
+              - link "Forum" [ref=f1e175] [cursor=pointer]:
+                - /url: https://skins.osuck.net/skins/3577
+              - generic [aria-hidden] [ref=f1e176]: —
+          - article [ref=f1e177]:
+            - generic [ref=f1e178]: "11"
+            - heading "# PotoMix (Poto)" [level=3] [ref=f1e179]
+            - 'img "Aperçu du skin # PotoMix (Poto)" [ref=f1e184]'
+            - generic [ref=f1e185]:
+              - link "Forum" [ref=f1e186] [cursor=pointer]:
+                - /url: https://skins.osuck.net/skins/4451
+              - generic [aria-hidden] [ref=f1e187]: →
+            - 'link "Télécharger # PotoMix (Poto)" [ref=f1e188] [cursor=pointer]':
+              - /url: /api/download/f19b50a4-86cd-42d2-b1c3-c2c87d1a1299
+          - article [ref=f1e189]:
+            - generic [ref=f1e190]: "12"
+            - heading "《HNJ》 Ryu Lion 『Clack』" [level=3] [ref=f1e191]
+            - img "Aperçu du skin 《HNJ》 Ryu Lion 『Clack』" [ref=f1e196]
+            - generic [aria-hidden] [ref=f1e198]: →
+            - link "Télécharger 《HNJ》 Ryu Lion 『Clack』" [ref=f1e199] [cursor=pointer]:
+              - /url: /api/download/e6e62d5d-bbed-4a43-aa50-60d0b1765872
+          - article [ref=f1e200]:
+            - generic [ref=f1e201]: "13"
+            - heading "Xuxu Xaxa Cup" [level=3] [ref=f1e202]
+            - img "Aperçu du skin Xuxu Xaxa Cup" [ref=f1e207]
+            - generic [aria-hidden] [ref=f1e209]: →
+            - link "Télécharger Xuxu Xaxa Cup" [ref=f1e210] [cursor=pointer]:
+              - /url: /api/download/fd6f88d6-4612-45e5-b780-a7ed96de41e2
+          - article [ref=f1e211]:
+            - generic [ref=f1e212]: "14"
+            - heading "《vaxedit (cyperdark (rektygon edit)" [level=3] [ref=f1e213]
+            - img "Aperçu du skin 《vaxedit (cyperdark (rektygon edit)" [ref=f1e218]
+            - generic [ref=f1e219]:
+              - link "Forum" [ref=f1e220] [cursor=pointer]:
+                - /url: https://github.com/rektygon/Skins/blob/master/README.md
+              - generic [aria-hidden] [ref=f1e221]: →
+            - link "Télécharger 《vaxedit (cyperdark (rektygon edit)" [ref=f1e222] [cursor=pointer]:
+              - /url: /api/download/eef09711-58de-4041-8713-61bdf8822f95
+          - article [ref=f1e223]:
+            - generic [ref=f1e224]: "15"
+            - heading "『XooMoon』 - Long Blue Trail]" [level=3] [ref=f1e225]
+            - img "Aperçu du skin 『XooMoon』 - Long Blue Trail]" [ref=f1e230]
+            - generic [ref=f1e231]:
+              - link "Forum" [ref=f1e232] [cursor=pointer]:
+                - /url: https://github.com/Bjonk1911/Xootynator/blob/main/xooter-skins.md
+              - generic [aria-hidden] [ref=f1e233]: →
+            - link "Télécharger 『XooMoon』 - Long Blue Trail]" [ref=f1e234] [cursor=pointer]:
+              - /url: /api/download/451cb89f-cdfb-41b3-88ee-2bfc596c79e7
+          - article [ref=f1e235]:
+            - generic [ref=f1e236]: "16"
+            - heading "anzt 11 winter V3 - てんてこ" [level=3] [ref=f1e237]
+            - img "Aperçu du skin anzt 11 winter V3 - てんてこ" [ref=f1e242]
+            - generic [ref=f1e243]:
+              - link "Forum" [ref=f1e244] [cursor=pointer]:
+                - /url: https://osu.ppy.sh/community/forums/topics/1948897
+              - generic [aria-hidden] [ref=f1e245]: →
+            - link "Télécharger anzt 11 winter V3 - てんてこ" [ref=f1e246] [cursor=pointer]:
+              - /url: /api/download/5b2bafc3-d5db-47fc-bbfa-ae6dc187a3de
+          - article [ref=f1e247]:
+            - generic [ref=f1e248]: "17"
+            - heading "Wintherest - v21022023 (Redo_)" [level=3] [ref=f1e249]
+            - img "Aperçu du skin Wintherest - v21022023 (Redo_)" [ref=f1e254]
+            - generic [ref=f1e255]:
+              - link "Forum" [ref=f1e256] [cursor=pointer]:
+                - /url: https://osu.ppy.sh/community/forums/topics/1498493?n=1
+              - generic [aria-hidden] [ref=f1e257]: →
+            - link "Télécharger Wintherest - v21022023 (Redo_)" [ref=f1e258] [cursor=pointer]:
+              - /url: /api/download/fc7922c1-467a-4674-a327-a938435470b6
+          - article [ref=f1e259]:
+            - generic [ref=f1e260]: "18"
+            - heading "Azure (AshClown)" [level=3] [ref=f1e261]
+            - img "Aperçu du skin Azure (AshClown)" [ref=f1e266]
+            - generic [ref=f1e267]:
+              - link "Forum" [ref=f1e268] [cursor=pointer]:
+                - /url: https://osu.ppy.sh/community/forums/topics/1929465
+              - generic [aria-hidden] [ref=f1e269]: →
+            - link "Télécharger Azure (AshClown)" [ref=f1e270] [cursor=pointer]:
+              - /url: /api/download/4bcad671-c38e-4ab1-ad19-f92865e4827d
+          - article [ref=f1e271]:
+            - generic [ref=f1e272]: "19"
+            - heading "Darker - Followpoint (niles)" [level=3] [ref=f1e273]
+            - img "Aperçu du skin Darker - Followpoint (niles)" [ref=f1e278]
+            - generic [ref=f1e279]:
+              - link "Forum" [ref=f1e280] [cursor=pointer]:
+                - /url: https://www.reddit.com/r/OsuSkins/comments/17ap5oj/darker_169_osustandard_osumania/
+              - generic [aria-hidden] [ref=f1e281]: →
+            - link "Télécharger Darker - Followpoint (niles)" [ref=f1e282] [cursor=pointer]:
+              - /url: /api/download/1b978f2c-a349-40dd-b33b-a0745f46c635
+          - article [ref=f1e283]:
+            - generic [ref=f1e284]: "20"
+            - heading "IJN Yamashiro V2" [level=3] [ref=f1e285]
+            - img "Aperçu du skin IJN Yamashiro V2" [ref=f1e290]
+            - generic [ref=f1e291]:
+              - link "Forum" [ref=f1e292] [cursor=pointer]:
+                - /url: https://osu.ppy.sh/community/forums/topics/1004844?n=1
+              - generic [aria-hidden] [ref=f1e293]: →
+            - link "Télécharger IJN Yamashiro V2" [ref=f1e294] [cursor=pointer]:
+              - /url: /api/download/84d35f98-b060-4c87-8152-edf32c5aae76
+          - article [ref=f1e295]:
+            - generic [ref=f1e296]: "21"
+            - heading "Argon pro 2022 - Yuzu edit" [level=3] [ref=f1e297]
+            - img "Aperçu du skin Argon pro 2022 - Yuzu edit" [ref=f1e302]
+            - generic [aria-hidden] [ref=f1e304]: →
+            - link "Télécharger Argon pro 2022 - Yuzu edit" [ref=f1e305] [cursor=pointer]:
+              - /url: /api/download/54bf03e1-d855-4ba6-9903-5dd838aa7fa1
+          - article [ref=f1e306]:
+            - generic [ref=f1e307]: "22"
+            - heading "Tekkito2 malisz" [level=3] [ref=f1e308]
+            - img "Aperçu du skin Tekkito2 malisz" [ref=f1e313]
+            - generic [aria-hidden] [ref=f1e315]: →
+            - link "Télécharger Tekkito2 malisz" [ref=f1e316] [cursor=pointer]:
+              - /url: /api/download/ddc4f633-87a1-49e8-be99-ce472bfeb415
+  - contentinfo "Pied de page" [ref=f1e317]:
+    - generic [ref=f1e318]:
+      - paragraph [ref=f1e319]: OSU!YUZU
+      - generic [ref=f1e320]:
+        - generic [ref=f1e321]:
+          - heading "Trouver des skins" [level=3] [ref=f1e322]
+          - list [ref=f1e323]:
+            - listitem [ref=f1e324]:
+              - link "Forum officiel osu!" [ref=f1e325] [cursor=pointer]:
+                - /url: https://osu.ppy.sh/community/forums/109
+            - listitem [ref=f1e326]:
+              - link "Compendium Skinship" [ref=f1e327] [cursor=pointer]:
+                - /url: https://compendium.skinship.xyz/
+            - listitem [ref=f1e328]:
+              - link "Osuck Skins" [ref=f1e329] [cursor=pointer]:
+                - /url: https://skins.osuck.net/fr
+            - listitem [ref=f1e330]:
+              - link "OsuSkins.net" [ref=f1e331] [cursor=pointer]:
+                - /url: https://osuskins.net/
+        - generic [ref=f1e332]:
+          - heading "Ressources" [level=3] [ref=f1e333]
+          - list [ref=f1e334]:
+            - listitem [ref=f1e335]:
+              - link "Skins en développement" [ref=f1e336] [cursor=pointer]:
+                - /url: https://osu.ppy.sh/community/forums/119
+            - listitem [ref=f1e337]:
+              - link "Skins remixés" [ref=f1e338] [cursor=pointer]:
+                - /url: https://osu.ppy.sh/community/forums/124
+            - listitem [ref=f1e339]:
+              - link "Reddit OsuSkins" [ref=f1e340] [cursor=pointer]:
+                - /url: https://www.reddit.com/r/OsuSkins/
+        - generic [ref=f1e341]:
+          - heading "Ailleurs" [level=3] [ref=f1e342]
+          - list [ref=f1e343]:
+            - listitem [ref=f1e344]:
+              - link "OsuRea — visualiseur d’area" [ref=f1e345] [cursor=pointer]:
+                - /url: https://osurea.yuzuctus.fr/
+            - listitem [ref=f1e346]:
+              - link "yuzuctus.fr" [ref=f1e347] [cursor=pointer]:
+                - /url: https://yuzuctus.fr/
+            - listitem [ref=f1e348]:
+              - link "GitHub — Yuzuctus" [ref=f1e349] [cursor=pointer]:
+                - /url: https://github.com/Yuzuctus
+      - generic [ref=f1e350]:
+        - generic [ref=f1e351]: © 2026 Yuzuctus
+        - generic [ref=f1e352]:
+          - text: "Illustrations :"
+          - link "Kourihase" [ref=f1e353] [cursor=pointer]:
+            - /url: https://x.com/Kourihase
+        - link "Haut de page ↑" [ref=f1e355] [cursor=pointer]:
+          - /url: "#top"
+  - button "Haut de page": ↑
