@@ -1,0 +1,3 @@
+# Agrume kit copy: byte-identical to the kit, so never let autocrlf touch it.
+agrume/** text eol=lf
+agrume/**/*.woff2 binary

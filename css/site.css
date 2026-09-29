@@ -1,0 +1,135 @@
+/*
+ * yuzuctus.fr · site-only rules, loaded after the Agrume kit (agrume/css).
+ * Kit tokens only: no colour, font or spacing of its own. Keep this file short;
+ * anything several sites need belongs in the kit first.
+ */
+
+/* ------------------------------------------------------ project previews */
+
+/* Schematic scenes for projects without a capture, drawn with kit tokens.
+   Each preview carries the --ag-item-accent of its gallery item. */
+.site-scene {
+  display: flex;
+  height: 330px;
+  flex-direction: column;
+  overflow: hidden;
+  border-top: var(--ag-border-mark) solid var(--ag-item-accent, var(--ag-identity));
+  padding: var(--ag-space-5);
+  background: var(--ag-surface);
+  color: var(--ag-ink);
+}
+.site-scene__top,
+.site-scene__line,
+.site-scene__sheet > span {
+  color: var(--ag-muted);
+  font: 500 var(--ag-text-2xs) / 1.3 var(--ag-font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.site-scene__top {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--ag-space-3);
+}
+.site-scene__editor {
+  display: flex;
+  gap: var(--ag-space-5);
+  margin-top: var(--ag-space-8);
+  border: var(--ag-border-hair) solid var(--ag-rule-strong);
+  padding: var(--ag-space-6) var(--ag-space-5);
+  background: var(--ag-paper);
+  font: 500 var(--ag-text-xs) / 1.7 var(--ag-font-mono);
+}
+.site-scene__gutter {
+  color: var(--ag-faint);
+}
+.site-scene__editor > div {
+  min-width: 0;
+  flex: 1;
+}
+.site-scene__editor strong {
+  display: block;
+  margin-bottom: var(--ag-space-3);
+  font-weight: 500;
+}
+.site-scene i {
+  display: block;
+  height: 5px;
+  margin-top: var(--ag-space-3);
+  background: var(--ag-rule-strong);
+}
+.site-scene i:nth-of-type(1) {
+  width: 66%;
+  background: var(--ag-identity);
+}
+.site-scene i:nth-of-type(2) {
+  width: 90%;
+}
+.site-scene i:nth-of-type(3) {
+  width: 51%;
+}
+.site-scene__word {
+  display: block;
+  margin-top: var(--ag-space-8);
+  font: 600 clamp(4rem, 7vw, 6.5rem) / 0.8 var(--ag-font-title);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.site-scene__word span {
+  color: var(--ag-identity);
+}
+.site-scene__line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ag-space-2);
+  margin-top: auto;
+  border-top: var(--ag-border-hair) solid var(--ag-rule-strong);
+  padding-top: var(--ag-space-3);
+}
+.site-scene__line b,
+.site-scene__flow > b {
+  color: var(--ag-identity);
+  font: 500 var(--ag-text-xl) / 1 var(--ag-font-mono);
+}
+.site-scene__flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: var(--ag-space-3);
+  margin-top: var(--ag-space-8);
+}
+.site-scene__sheet {
+  height: 180px;
+  border: var(--ag-border-hair) solid var(--ag-rule-strong);
+  padding: var(--ag-space-4) var(--ag-space-3);
+  background: var(--ag-paper);
+}
+.site-scene__sheet > span {
+  display: block;
+  margin-bottom: var(--ag-space-6);
+}
+.site-scene--capture {
+  padding: 0;
+}
+.site-scene--capture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------------------------------------------------------------- profiles */
+
+/* A Yuzu chibi (Kourihase) sits on the top rule of each directory group. */
+.site-directory {
+  position: relative;
+}
+.site-directory__chibi {
+  position: absolute;
+  top: -49px;
+  right: var(--ag-space-2);
+  width: 86px;
+  height: 86px;
+  object-fit: contain;
+  pointer-events: none;
+}

@@ -221,9 +221,8 @@
     var dark = theme === "dark";
     HTML.setAttribute("data-theme", dark ? "dark" : "light");
     var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.content = dark ? "#1c2721" : "#fcf7ee";
-    document.querySelectorAll(".theme-toggle").forEach(function (button) {
-      button.setAttribute("aria-pressed", String(dark));
+    if (meta) meta.content = dark ? "#131c17" : "#f3f6ea";
+    document.querySelectorAll("[data-theme-toggle]").forEach(function (button) {
       button.setAttribute("aria-label", dark ? t("theme.toLight") : t("theme.toDark"));
       var label = button.querySelector("[data-theme-label]");
       if (label) label.textContent = dark ? t("theme.light") : t("theme.dark");
@@ -234,7 +233,7 @@
     var saved = safeGet(THEME_KEY);
     var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
     setTheme(saved === "dark" || saved === "light" ? saved : prefersDark ? "dark" : "light");
-    document.querySelectorAll(".theme-toggle").forEach(function (button) {
+    document.querySelectorAll("[data-theme-toggle]").forEach(function (button) {
       button.addEventListener("click", function () {
         var next = HTML.getAttribute("data-theme") === "dark" ? "light" : "dark";
         safeSet(THEME_KEY, next);
@@ -325,7 +324,7 @@
     var previews = Array.prototype.slice.call(document.querySelectorAll("[data-project-preview]"));
     if (!links.length || !previews.length) return;
     function show(project) {
-      links.forEach(function (link) { link.classList.toggle("is-active", link.dataset.projectLink === project); });
+      links.forEach(function (link) { if (link.dataset.projectLink === project) link.setAttribute("aria-current", "true"); else link.removeAttribute("aria-current"); });
       previews.forEach(function (preview) { preview.hidden = preview.dataset.projectPreview !== project; });
     }
     links.forEach(function (link) {
@@ -366,9 +365,9 @@
   }
 
   function initBackToTop() {
-    var button = document.querySelector(".back-to-top");
+    var button = document.querySelector(".ag-to-top");
     if (!button) return;
-    function update() { button.classList.toggle("visible", window.scrollY > window.innerHeight); }
+    function update() { button.classList.toggle("is-visible", window.scrollY > window.innerHeight); }
     window.addEventListener("scroll", update, { passive: true });
     button.addEventListener("click", function () {
       var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

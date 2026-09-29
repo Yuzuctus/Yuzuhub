@@ -14,10 +14,19 @@ The editorial ecosystem directory for **Yuzuctus**.
 
 ## Design system
 
-YuzuHub consumes the shared **CUT × STRATA** foundations. The canonical
-specification lives in `../CUT × STRATA/DESIGN_SYSTEM.md`; this repository's
-`css/tokens.css` is the synchronized runtime copy. Product-specific composition
-stays in `css/layout.css`, `css/components.css` and `css/pages.css`.
+YuzuHub uses the shared **Agrume v3** kit (`Personnel/Redesign/Agrume_Design`),
+the single design of yuzuctus.fr, skins.yuzuctus.fr and FM.Yuzuctus.
+`agrume/css/` (fonts, tokens, base, components) and `agrume/fonts/` (IBM Plex)
+are **verbatim copies**: never edit them here; change the kit, then recopy.
+Site-only rules live in `css/site.css` and use kit tokens only.
+
+Check the copy after any update (exit code 0 = identical):
+
+```sh
+node ../Redesign/Agrume_Design/check-parity.mjs agrume/css
+```
+
+`.gitattributes` forces LF on `agrume/**` so `autocrlf` cannot break parity.
 
 ## Tech
 

@@ -34,7 +34,7 @@ The hub gathers independent tools and experiments made around Yuzuctus's own nee
 ## Brand Commitments
 
 - Keep the Yuzuctus name and the user's OC art, with the existing artist credits intact.
-- Retain the established mint green `#A6E9D1` and use Nunito, the font named in the repository's previous tokens (the user called it “Numito”).
+- Use the shared Agrume v3 kit as is (Yuzu palette, IBM Plex Sans / Sans Condensed / Mono, light grain); the site has no palette or fonts of its own.
 - Keep interface copy professional, concise, and factual even when the illustrations or visual tone are playful. Avoid cute slogans and sentimental filler.
 
 ## Evidence on Hand

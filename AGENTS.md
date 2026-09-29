@@ -10,3 +10,5 @@ Pour toute tâche de création, refonte ou revue visuelle dans ce dépôt :
 - Une compilation réussie ne suffit pas à prouver le rendu. Si tu ne peux pas ouvrir ou capturer la page, indique que la revue visuelle reste à faire.
 
 Garde les textes professionnels, utiles et factuels. Préserve les crédits, les faits, les interactions et les assets valides; change les formulations vagues ou mignonnes en descriptions concrètes. N'ajoute pas de dépendance ou de fonction produit uniquement pour obtenir un effet visuel.
+
+Système visuel : le kit Agrume v3 (`../Redesign/Agrume_Design`, voir son `DESIGN.md`). `agrume/css/` et `agrume/fonts/` sont des copies verbatim du kit : ne les modifie pas ici. Le CSS propre au site est `css/site.css`, en tokens `--ag-*` uniquement. Après toute recopie, `node ../Redesign/Agrume_Design/check-parity.mjs agrume/css` doit sortir à 0.
