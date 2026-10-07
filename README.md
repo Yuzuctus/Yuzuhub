@@ -11,6 +11,7 @@ The editorial ecosystem directory for **Yuzuctus**.
 - Bilingual editorial overview of Yuzuctus projects and experiments
 - Direct routes to Osurea, YuzuSkins and social profiles
 - Light and dark themes with reduced-motion support
+- A [credits page](https://yuzuctus.fr/credits/) with each artist’s own profiles and a voluntary credit for the VPS provider, Echo-Host
 
 ## Design system
 
@@ -35,4 +36,7 @@ node ../Redesign/Agrume_Design/check-parity.mjs agrume/css
 
 ## Credits
 
-- **Art by**: [KouriHase](https://x.com/Kourihase) ou [Joa](https://x.com/dreepies)
+- **Art by**: [KouriHase](https://x.com/Kourihase), [Mazuko](https://vgen.co/Mazuko), and [Joa](https://x.com/dreepies).
+- **VPS provider**: [Echo-Host](https://echo-host.net/). The credits page identifies the referral link as an affiliate link.
+
+The static profile links live in `credits/index.html`; each artist can have a different set of links. French and English copy, including page metadata, lives in `js/app.js`. Site-specific layout is in `css/site.css`. Both pages share the language and theme preferences.

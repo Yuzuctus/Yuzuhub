@@ -94,7 +94,41 @@
         intro: "Les illustrations de ce site ont été réalisées par ces artistes et sont utilisées avec leur accord.",
         mazuko: "Portrait d’accueil",
         kourihase: "Croquis et chibis",
-        joa: "Autres illustrations"
+        joa: "Autres illustrations",
+        all: "Tous les crédits et liens ↗"
+      },
+      creditPage: {
+        meta: {
+          title: "Crédits — Yuzuctus",
+          description: "Les crédits des artistes et services qui contribuent aux projets de Yuzuctus, avec leurs profils et liens.",
+          locale: "fr_FR"
+        },
+        kicker: "YUZUCTUS / CRÉDITS",
+        lead: "Les artistes et services qui contribuent à mes projets, et les liens pour les retrouver.",
+        home: "Accueil",
+        artistsJump: "Les artistes ↓",
+        servicesJump: "Les services ↓",
+        artists: "Artistes",
+        artistsNote: "Illustrations utilisées avec l’accord de leurs artistes.",
+        profiles: "Profils et liens",
+        kouriSketchAlt: "Croquis de Yuzu par KouriHase — ouvrir l’œuvre",
+        kouriChibisAlt: "Chibis de Yuzu par KouriHase — ouvrir l’œuvre",
+        kouriSketchCaption: "Croquis · KouriHase",
+        kouriChibisCaption: "Chibis · KouriHase",
+        kouriRole: "Croquis et chibis de Yuzu.",
+        mazukoRole: "Portrait de Yuzu affiché sur l’accueil.",
+        mazukoAlt: "Portrait signé de Yuzu par Mazuko — ouvrir l’œuvre",
+        mazukoCaption: "Portrait signé · Mazuko",
+        joaRole: "Illustrations de Yuzu.",
+        joaAlt: "Portrait de Yuzu par Joa — ouvrir l’œuvre",
+        joaCaption: "Portrait · Joa",
+        services: "Services",
+        servicesNote: "Les services utilisés pour mes projets.",
+        hostRole: "Le fournisseur de mon VPS.",
+        hostThanks: "Je souhaite aussi remercier Echo-Host pour l’hébergement, de ma propre initiative.",
+        hostVisit: "Découvrir Echo-Host ↗",
+        affiliateNote: "Lien d’affiliation.",
+        backHome: "Retour à l’accueil ↗"
       },
       footer: {
         topLabel: "Haut de page"
@@ -187,7 +221,41 @@
         intro: "The illustrations on this site were made by these artists and are used with their permission.",
         mazuko: "Homepage portrait",
         kourihase: "Sketch and chibis",
-        joa: "Other illustrations"
+        joa: "Other illustrations",
+        all: "All credits and links ↗"
+      },
+      creditPage: {
+        meta: {
+          title: "Credits — Yuzuctus",
+          description: "Credits for the artists and services contributing to Yuzuctus’s projects, with their profiles and links.",
+          locale: "en_US"
+        },
+        kicker: "YUZUCTUS / CREDITS",
+        lead: "The artists and services contributing to my projects, and where to find them.",
+        home: "Home",
+        artistsJump: "The artists ↓",
+        servicesJump: "The services ↓",
+        artists: "Artists",
+        artistsNote: "Illustrations used with their artists’ permission.",
+        profiles: "Profiles and links",
+        kouriSketchAlt: "Yuzu sketch by KouriHase — open artwork",
+        kouriChibisAlt: "Yuzu chibis by KouriHase — open artwork",
+        kouriSketchCaption: "Sketch · KouriHase",
+        kouriChibisCaption: "Chibis · KouriHase",
+        kouriRole: "Yuzu sketches and chibis.",
+        mazukoRole: "Yuzu portrait displayed on the homepage.",
+        mazukoAlt: "Signed Yuzu portrait by Mazuko — open artwork",
+        mazukoCaption: "Signed portrait · Mazuko",
+        joaRole: "Yuzu illustrations.",
+        joaAlt: "Yuzu portrait by Joa — open artwork",
+        joaCaption: "Portrait · Joa",
+        services: "Services",
+        servicesNote: "The services I use for my projects.",
+        hostRole: "My VPS provider.",
+        hostThanks: "I also want to thank Echo-Host for the hosting, on my own initiative.",
+        hostVisit: "Visit Echo-Host ↗",
+        affiliateNote: "Affiliate link.",
+        backHome: "Back to the homepage ↗"
       },
       footer: {
         topLabel: "Back to top"
@@ -273,12 +341,15 @@
       node.alt = t(node.getAttribute("data-i18n-alt"));
     });
     var metaDescription = document.querySelector('meta[name="description"]');
+    var ogTitle = document.querySelector('meta[property="og:title"]');
     var ogDescription = document.querySelector('meta[property="og:description"]');
     var ogLocale = document.querySelector('meta[property="og:locale"]');
-    document.title = t("meta.title");
-    if (metaDescription) metaDescription.content = t("meta.description");
-    if (ogDescription) ogDescription.content = t("meta.description");
-    if (ogLocale) ogLocale.content = t("meta.locale");
+    var metaKey = document.body.dataset.page === "credits" ? "creditPage.meta" : "meta";
+    document.title = t(metaKey + ".title");
+    if (ogTitle) ogTitle.content = t(metaKey + ".title");
+    if (metaDescription) metaDescription.content = t(metaKey + ".description");
+    if (ogDescription) ogDescription.content = t(metaKey + ".description");
+    if (ogLocale) ogLocale.content = t(metaKey + ".locale");
     document.querySelectorAll("[data-lang-option]").forEach(function (button) {
       button.setAttribute("aria-pressed", String(button.dataset.langOption === currentLanguage));
     });
